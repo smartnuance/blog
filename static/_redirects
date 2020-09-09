@@ -1,0 +1,4 @@
+/categories/* /tags/:splat
+/categories /tags
+
+/golang /tags/golang

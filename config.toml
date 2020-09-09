@@ -1,0 +1,105 @@
+baseURL = "https://smartnuance.com/blog/"
+languageCode = "en-ch"
+title = "SMARTnuance"
+titleCaseStyle = "AP"
+pygmentsUseClasses = true
+enableGitInfo = true
+enableRobotsTXT = true
+
+[taxonomies]
+tag = "tags"
+
+[permalinks]
+posts = ":title"
+
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = false
+angledQuotes = false
+
+[params]
+timeFormatRFC3339 = "2006-01-02T15:04:05Z07:00"
+timeFormatDefault = "2. January 2006"
+description = "A blog from the SMARTnuance company about full stack engineering, teaching/bootcamps in tech and mentoring for creative processes and meaningful digitalization."
+
+[params.author]
+name = "Simon Wehrli"
+homepage = "https://smartnuance.com"
+
+[menu]
+
+[[menu.main]]
+name = "Me"
+weight = 1
+url = "/me/"
+
+[[menu.main]]
+name = "Blog"
+weight = 2
+url = "/"
+
+[[menu.main]]
+name = "Tags"
+weight = 3
+url = "/tags/"
+
+[[menu.footer]]
+name = "Privacy"
+weight = 1
+url = "/privacy/"
+
+[[menu.footer]]
+name = "RSS"
+weight = 2
+url = "/posts/index.xml"
+
+[[menu.footer]]
+name = "LinkedIn"
+weight = 3
+url = "https://linkedin.com/in/simonwehrli"
+
+[[menu.footer]]
+name = "Github"
+weight = 4
+url = "https://github.com/gitsimon"
+
+[[menu.footer]]
+name = "GitLab"
+weight = 5
+url = "https://gitlab.com/smartnuance"
+
+[related]
+threshold = 80
+includeNewer = true
+toLower = true
+
+[[related.indices]]
+name = "tags"
+weight = 100
+
+[[related.indices]]
+name = "keywords"
+weight = 80
+
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = true
+
+[markup.goldmark.parser]
+attribute = true
+autoHeadingID = true
+autoHeadingIDType = "github"
+
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = false
+xHTML = false

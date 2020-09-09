@@ -1,0 +1,6 @@
+node_modules
+public
+.log
+
+resources/_gen/assets/css/
+/assets/dependencies

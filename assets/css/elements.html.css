@@ -1,0 +1,14 @@
+html {
+  font-size: 18px;
+}
+
+@screen sm {
+  html {
+    font-size: 20px;
+  }
+}
+
+::selection {
+  background-color: var(--colors-selection);
+  text-shadow: none !important;
+}
