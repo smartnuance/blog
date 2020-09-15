@@ -34,19 +34,19 @@ weight = 1
 url = "/me/"
 
 [[menu.main]]
-name = "Blog"
+name = "Offers"
 weight = 2
-url = "/"
+url = "/offers/"
 
 [[menu.main]]
-name = "Tags"
+name = "Blog"
 weight = 3
-url = "/tags/"
+url = "/"
 
 [[menu.footer]]
-name = "Privacy"
+name = "Tags"
 weight = 1
-url = "/privacy/"
+url = "/tags/"
 
 [[menu.footer]]
 name = "RSS"
@@ -54,19 +54,24 @@ weight = 2
 url = "/posts/index.xml"
 
 [[menu.footer]]
-name = "LinkedIn"
+name = "Privacy"
 weight = 3
-url = "https://linkedin.com/in/simonwehrli"
+url = "/privacy/"
 
 [[menu.footer]]
-name = "Github"
+name = "LinkedIn"
 weight = 4
-url = "https://github.com/gitsimon"
+url = "https://linkedin.com/in/simonwehrli"
 
 [[menu.footer]]
 name = "GitLab"
 weight = 5
 url = "https://gitlab.com/smartnuance"
+
+[[menu.footer]]
+name = "Github"
+weight = 6
+url = "https://github.com/gitsimon"
 
 [related]
 threshold = 80

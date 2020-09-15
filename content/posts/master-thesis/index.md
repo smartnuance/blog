@@ -20,7 +20,8 @@ superior to most tools built into IDEs.
 
 **Download** full [Master Thesis](Master_Thesis.pdf)
 
-**Open repo** [static analyser](https://github.com/gitsimon/spadup-lyra)
+**Checkout Repo** with
+[Code of Static Analyser](https://github.com/gitsimon/spadup-lyra)
 
 ## Abstract
 
