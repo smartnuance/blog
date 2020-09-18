@@ -2,11 +2,15 @@
 title: Offers
 ---
 
-I'm currently still building up my company, evaluating other legal forms. This
-includes the idea to found a cooperative with others I know and trust to offer
-the most diverse and effective team to solve the problem.
+I'm currently building up my company, evaluating the legal structure. This
+includes the idea to found a cooperative with cool volks I know and trust. I
+believe today's challenges of digitalizing whole sectors require very dynamic
+and diverse teams and continous education.
 
-For now, please just get into contact with me to discuss your interesting
-challenge and I could be helpful to tackle it:
+For now, the simplest is to get contact me and we can discuss your interesting
+challenge and how I could be helpful to tackle it:
 
 **smartnuance@tutanota.com**
+
+I usually collaborate with teams from the customer or build my own team with the
+skills best aligned with the project requirements.
