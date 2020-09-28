@@ -14,7 +14,6 @@
   transform: translateX(0);
 }
 .toc {
-  background-color: rgba(255, 255, 255, 0.9);
   transform: translateX(-100%);
 }
 .toc.toc-right {
