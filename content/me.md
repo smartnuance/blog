@@ -2,6 +2,8 @@
 title: My Vision & Me
 ---
 
+{{<figure src="/img/simon.jpg" caption="Hello that's me.">}}
+
 Hi there! If you are searching for Simon you are right here. This page is a
 little self-centered. I talk about a specific but diverse topic, about myself.
 
