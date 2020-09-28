@@ -15,3 +15,6 @@
 @import './utilities.comma-list.css';
 
 @import './trumps.utilties.css';
+
+@import 'tocbot/src/scss/tocbot.scss';
+@import './tocbot.css';

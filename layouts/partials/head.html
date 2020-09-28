@@ -63,12 +63,13 @@
   <link rel="manifest" href="/site.webmanifest">
 
   {{ $postCSSConfig := (dict "config" "postcss.config.js") }}
+  {{ $toCSSConfig := (dict "includePaths" (slice "./node_modules")) }}
 
   {{ if .Site.IsServer }}
-    {{ $css := resources.Get "css/main.css" | toCSS | postCSS $postCSSConfig  }}
+    {{ $css := resources.Get "css/main.css" | toCSS $toCSSConfig | postCSS $postCSSConfig  }}
     <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" media="screen">
   {{ else }}
-    {{ $css := resources.Get "css/main.css" | toCSS | postCSS $postCSSConfig | minify | fingerprint }}
+    {{ $css := resources.Get "css/main.css" | toCSS $toCSSConfig | postCSS $postCSSConfig | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" integrity="{{ $css.Data.Integrity }}" media="screen">
   {{ end }}
 
@@ -126,6 +127,6 @@
        "description": "{{ .Site.Params.description }}",
      }
      {{ end }}
-  </script>
+    </script>
   {{ end }}
 </head>
