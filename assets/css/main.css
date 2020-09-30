@@ -16,5 +16,4 @@
 
 @import './trumps.utilties.css';
 
-@import 'tocbot/src/scss/tocbot.scss';
-@import './tocbot.css';
+@import 'tocbot.scss';

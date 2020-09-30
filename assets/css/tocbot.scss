@@ -1,13 +1,17 @@
+/* Styles */
+
+@import 'tocbot-core';
+@import 'tocbot-default-theme';
+
 .toc {
   height: 100%;
-  width: 280px;
+  width: 100px;
   transform: translateX(0);
   margin-top: 15rem;
 }
 .toc-icon {
   position: fixed;
   top: 0;
-  right: 0;
 }
 #toc:checked ~ .toc {
   box-shadow: 0 0 5px #c8c8c8;
@@ -20,13 +24,13 @@
   transform: translateX(100%);
   right: 0;
 }
-@media (min-width: 52em) {
+@media (min-width: 90em) {
   .toc {
+    width: 400px;
     transform: translateX(0);
   }
   .toc.toc-right {
     transform: translateX(0);
-    right: calc((100% - 65rem) / 2);
   }
   .toc-icon {
     display: none;

@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="container mx-auto px-4">
+<div class="toc-content container mx-auto px-4">
   <header class="mb-12">
     <h1 class="text-3xl sm:text-5xl mb-4 sm:mb-8">{{ .Title }}</h1>
   </header>
-  <nav class="toc toc-right js-toc relative z-1 transition--300 absolute pa4 is-position-fixed">
+  <nav class="toc toc-right relative z-1 transition--300 absolute is-position-fixed">
   </nav>
   <div class="c-post-content prose prose-lg">
     {{ .Content }}
