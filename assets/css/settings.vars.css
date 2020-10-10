@@ -1,11 +1,10 @@
 :root {
-  --font-display: 'ui-sans-serif', '-apple-system', 'BlinkMacSystemFont',
-    'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji',
-    'Segoe UI', 'Roboto', 'Segoe UI Emoji', 'Segoe UI Symbol',
-    'Noto Color Emoji';
-  --font-body: 'ui-serif', 'Georgia', 'Times', 'Times New Roman', 'serif',
-    'Apple Color Emoji', 'Segoe UI', 'Roboto', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-display: 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+    'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-body: 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+    'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono: 'ui-monospace', 'SFMono-Regular', 'Consolas', 'Liberation Mono',
     'Menlo', 'Courier', 'monospace';
 
