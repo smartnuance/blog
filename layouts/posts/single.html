@@ -1,8 +1,13 @@
 {{ define "main" }}
 <article class="toc-content container mx-auto px-4">
   <header class="mb-12">
-    {{ partial "post-metadata" . }}
-    <h1 class="text-4xl sm:text-5xl leading-tight mt-4">{{ .Title | title }}</h1>
+    <div class="py-8 bg-blue-gradient bg-config-gradient relative flex flex-col justify-center px-4">
+      <div class="container mx-auto py-8 undefined">
+        <h1 class="text-3xl leading-tight mt-4">{{ .Title | title }}</h2>
+        <p class="font-mono text-xl my-4 font-hairline leading-loose">{{ .Description }}</p>
+      </div>
+      {{ partial "post-metadata" . }}
+    </div>
   </header>
   <nav class="toc toc-right relative z-1 transition--300 absolute pa4 is-position-fixed">
   </nav>

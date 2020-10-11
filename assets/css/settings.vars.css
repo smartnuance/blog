@@ -8,9 +8,9 @@
   --font-mono: 'ui-monospace', 'SFMono-Regular', 'Consolas', 'Liberation Mono',
     'Menlo', 'Courier', 'monospace';
 
-  --colors-primary: #0040dd;
-  --colors-primary-light: color(#0040dd l(90%));
-  --colors-primary-lightest: color(#0040dd l(95%));
+  --colors-primary: #54bc4b;
+  --colors-primary-light: color(#54bc4b l(90%));
+  --colors-primary-lightest: color(#54bc4b l(95%));
   --colors-secondary: #fac24f;
   --colors-tertiary: #d70015;
   --colors-quaternary: #a05a00;
@@ -40,9 +40,9 @@
   --colors-white: #000;
   --colors-black: #fff;
 
-  --colors-primary: #409cff;
-  --colors-primary-light: color(#409cff a(25%));
-  --colors-primary-lightest: color(#409cff a(10%));
+  --colors-primary: #54bc4b;
+  --colors-primary-light: color(#54bc4b a(25%));
+  --colors-primary-lightest: color(#54bc4b a(10%));
   --colors-secondary: #ffd426;
   --colors-tertiary: #ff6961;
   --colors-quaternary: #ffd426;

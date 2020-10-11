@@ -1,6 +1,6 @@
 ---
 title: Fix Golang's error handling
-draft: false
+draft: true
 date: 2020-09-03T21:41:18-04:00
 description:
   Golang's error handling is not (yet) fixed, but my prefered solution is in
