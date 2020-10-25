@@ -54,7 +54,7 @@ const Services: React.FC = () => {
   return (
     <Container section>
       <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      <Styled.Services>
+      {/* <Styled.Services>
         {services.map((item) => {
           const {
             id,
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
             </Styled.ServiceItem>
           );
         })}
-      </Styled.Services>
+      </Styled.Services> */}
       <Styled.Content>
         <FormatHtml content={prelude} />
       </Styled.Content>
