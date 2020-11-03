@@ -29,4 +29,16 @@ export default createGlobalStyle`
   li {
     ${tw`mt-3`};
   }
+
+  table {
+    ${tw`my-5 min-w-full leading-normal`};
+  }
+
+  th {
+    ${tw`px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider align-bottom`};
+  }
+
+  td {
+    ${tw`px-5 py-5 border-b border-gray-200 text-sm align-top`};
+  }
 `;
