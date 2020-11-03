@@ -9,6 +9,13 @@ const Footer: React.FC = () => (
     <Container>
       <Styled.Links>
         <Styled.Link
+          href="https://www.linkedin.com/in/simonwehrli/"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          LinkedIn
+        </Styled.Link>
+        <Styled.Link
           href="https://gitlab.com/smartnuance"
           rel="noreferrer noopener"
           target="_blank"
