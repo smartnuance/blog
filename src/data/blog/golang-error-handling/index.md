@@ -1,17 +1,17 @@
 ---
+category: 'blog'
 title: Fix Golang's error handling
-draft: true
-date: 2020-09-03T21:41:18-04:00
-description:
-  Golang's error handling is not (yet) fixed, but my prefered solution is in
-  reach.
+date: '2020-09-03'
+description: Golang's error handling is not (yet) fixed, but my prefered solution is in reach.
 tags: [Golang, Coding]
+published: false
 ---
 
 Error handling is hard. Golang takes a refreshing approach by making everything
 _explicit_. Sounds cumbersome, is cumbersome and the one simple but powerful
 error handling concept has to be invented still. Maybe by you, after you read
 this article.
+
 
 ## Error handling by throwing Exceptions
 
@@ -68,13 +68,13 @@ the _last_ value that describes the error by incorporating more information like
 an error message or an error code into a struct that implements the error
 interface:
 
-```golang
+```go
 return "", err
 ```
 
 or
 
-```golang
+```go
 return "", &myErrorStruct
 ```
 
@@ -84,7 +84,7 @@ Thus we really don't need exceptions if we accept two facts:
 - errors have to be explicitely checked for at each and every call that returns
   errors
 
-  ```golang
+  ```go
   result, err := ...
   if err != nil {
 
@@ -107,13 +107,11 @@ premises:
 
 ---
 
-ohje, mir war das bewusst, ich habe aber ein Steilpass für diesen Fehler
-eingeführt.
 
 Ich verwende mit ValidationError wenn dann == vergleiche für konkrete checks und
 für die detektion dann ja den wrapper der ein wirklich anderer Type ist:
 
-```golang
+```go
 type ValidationErrors struct {
 	Errs []ValidationError
 }
@@ -123,16 +121,16 @@ func (v *ValidationErrors) Error() string {
 }
 ```
 
-Oder wenn ich den wrapper sparen will, dann
 
-```golang
+Golang sadly does not have a simple way to define a new type from an existing type. It has a
+[type alias](https://yourbasic.org/golang/type-alias/), but we cannot use that since _"An alias declaration doesn’t create a new distinct type different from the type it’s created from"_.
+
+So we can use the "field inheritance" shorthand to define a new struct that already implements the `error` interface.
+
+```go{2}{numberLines: true}
 type ExportValidationError struct {
 	error
 }
 
 var ErrKeyNotFound = ExportValidationError{errors.New("key not found")}
 ```
-
-PS rant: Golang hat es leider verpeilt ein
-[type alias](https://yourbasic.org/golang/type-alias/) als solches zu benennen,
-wie z.B. Kotlin: typealias NodeSet = Set<Network.Node>
