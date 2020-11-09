@@ -33,6 +33,24 @@ module.exports = {
             }
           },
           'gatsby-remark-copy-linked-files',
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve(`./src/components/Layout/index.tsx`),
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 768,
+              linkImagesToOriginal: false
+            }
+          },
+          'gatsby-remark-copy-linked-files',
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -98,7 +116,7 @@ module.exports = {
               escapeEntities: {},
             },
           },
-        ]
+        ],
       }
     },
     `gatsby-transformer-sharp`,
@@ -106,8 +124,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-personal-website-starter`,
-        short_name: `starter`,
+        name: `smartnuance-website`,
+        short_name: `SMARTnuance`,
         start_url: `/`,
         background_color: `#81e6d9`,
         theme_color: `#81e6d9`,

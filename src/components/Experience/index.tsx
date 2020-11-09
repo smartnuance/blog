@@ -2,12 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Timeline from 'components/ui/Timeline';
-import Container from 'components/ui/Container';
-import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
-
-import { SectionTitle } from 'helpers/definitions';
-import * as Styled from './styles';
 
 interface Experience {
   node: {
@@ -23,15 +18,8 @@ interface Experience {
 }
 
 const Experience: React.FC = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
+  const { allMarkdownRemark } = useStaticQuery(graphql`
     query {
-      markdownRemark(frontmatter: { category: { eq: "experiences section" } }) {
-        html
-        frontmatter {
-          title
-          subtitle
-        }
-      }
       allMarkdownRemark(
         filter: { frontmatter: { category: { eq: "experiences" } } }
         sort: { order: DESC, fields: fileAbsolutePath }
@@ -52,18 +40,10 @@ const Experience: React.FC = () => {
     }
   `);
 
-  const sectionTitle: SectionTitle = markdownRemark.frontmatter;
-  const prelude = markdownRemark.html
   const experiences: Experience[] = allMarkdownRemark.edges;
 
   return (
-    <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
-
-      <Styled.Content>
-        <FormatHtml content={prelude} />
-      </Styled.Content>
-
+    <>
       {experiences.map((item) => {
         const {
           id,
@@ -82,7 +62,7 @@ const Experience: React.FC = () => {
           />
         );
       })}
-    </Container>
+    </>
   );
 };
 

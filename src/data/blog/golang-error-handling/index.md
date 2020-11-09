@@ -4,7 +4,6 @@ title: Fix Golang's error handling
 date: '2020-09-03'
 description: Golang's error handling is not (yet) fixed, but my prefered solution is in reach.
 tags: [Golang, Coding]
-published: false
 ---
 
 Error handling is hard. Golang takes a refreshing approach by making everything

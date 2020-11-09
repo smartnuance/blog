@@ -7,16 +7,19 @@ import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
-import FormatHtml from 'components/utils/FormatHtml';
+import { MDXProvider } from '@mdx-js/react';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import { ImageSharpFluid } from 'helpers/definitions';
 
 import * as Styled from './styles';
 
+const shortcodes = { Link }; // Provide common components here
+
 interface Post {
-  html: React.ReactNode;
+  body: string;
   fields: {
-    slug: string;
+    path: string;
   };
   frontmatter: {
     title: string;
@@ -26,12 +29,17 @@ interface Post {
         fluid: ImageSharpFluid;
       };
     };
+    head_cover: {
+      childImageSharp: {
+        fluid: ImageSharpFluid;
+      };
+    };
   };
 }
 
 interface Props {
   data: {
-    markdownRemark: Post;
+    mdx: Post;
   };
   pageContext: {
     slug: string;
@@ -41,29 +49,32 @@ interface Props {
 }
 
 const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
-  const post = data.markdownRemark;
+  const post = data.mdx;
   const { previous, next } = pageContext;
+  const cover = post.frontmatter.head_cover || post.frontmatter.cover;
 
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
       <Container section>
         <Styled.Image>
-          <Img fluid={post.frontmatter.cover.childImageSharp.fluid} alt={post.frontmatter.title} />
+          <Img fluid={cover.childImageSharp.fluid} alt={post.frontmatter.title} />
         </Styled.Image>
         <TitleSection title={post.frontmatter.date} subtitle={post.frontmatter.title} />
-        <FormatHtml content={post.html} />
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </MDXProvider>
         <Styled.Links>
           <span>
             {previous && (
-              <Link to={previous.fields.slug} rel="previous">
+              <Link to={previous.fields.path} rel="previous">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </span>
           <span>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.path} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -78,12 +89,19 @@ export default BlogPost;
 
 export const query = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(slug: { eq: $slug }) {
+      body
       frontmatter {
         title
         date(formatString: "D. MMMM YYYY")
         cover {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        head_cover {
           childImageSharp {
             fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid

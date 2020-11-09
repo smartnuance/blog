@@ -1,6 +1,5 @@
 ---
 title: Sticky press
-draft: true
 date: 2020-09-03T21:41:18-04:00
 description: The underlying problem of today's media and a proposal
 tags: [Democracy, Politics]

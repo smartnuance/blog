@@ -1,12 +1,19 @@
----
-category: 'experiences section'
-title: 'Resume'
-subtitle: 'My Vision & Me'
----
+import Container from 'components/ui/Container';
+import SEO from 'components/SEO';
+import Experience from 'components/Experience';
+import Education from 'components/Education';
+import TitleSection from 'components/ui/TitleSection';
+
+<SEO title="Resume" />
+
+<Container section>
+
+<TitleSection title="Resume" subtitle="My Vision & Me" />
+
 
 This page is a little self-centered. I talk about a specific but diverse topic, about myself.
 
-![Hello, that's me.](./simon.jpg)
+![Hello, that's me.](../assets/images/simon.jpg)
 
 I'm a visionary for software engineering and a pragmatist in writing code.
 As a kid I tried doing art on my father's old Macintosh. When I
@@ -39,14 +46,28 @@ _Bialetti_. Definitely a good start into a high motivation day using some of thi
 | [Google Cloud](https://cloud.google.com/) & [Microsoft Azure](https://azure.microsoft.com/) (managed with [Terraform](https://www.terraform.io/)) | I was lucky to work with both clouds on projects scaling to multiple regions. I'm used to having a staged deployment strategy with at least three stages and automated tests to ensure continuous deployments never break the production system. I was specifically involved in configuring cloud infrastructure to enable **system tests running over multiple services**, both on deployed systems and as part of a continuous integration pipeline. |
 | [PostgreSQL](https://www.postgresql.org/)                                                                                                         | Some classic things are here to stay. For most problems, even in distributed microservice architectures, (multiple) PostgreSQL databases are still the best choice for clean data organization.                                                                                                                                                                                                                                                        |
 | [Flutter](https://flutter.dev/)                                                                                                                   | In my last project at work, we built a stock receipt management platform interfacing with a Flutter app developed by us as well. The app facilitates the work of thousands of employees. I was code owner for the **distributed & offline capable authentication process** and ensured its security. Also I architectured complex form validation based on data fetched from asynchronous synchronization of huge amounts of base data.                |
-| [ReactJS](https://reactjs.org/)                                                                                                                   | My choice for side projects that really asked for a highly interactive web interface.                                                                                                                                                                                                                                                                                                                                                                  |
+| [ReactJS](https://reactjs.org/)                                                                                                                   | My choice for web frontends, at least if I start from scratch. For example, this very site is built using [Gatsby](https://www.gatsbyjs.com/), a static site generator based on [React](https://reactjs.org/) allowing me to write my blog articles in lovely simple [Markdown](https://guides.github.com/features/mastering-markdown/).                                                                                                               |
 | [Java EE](https://www.oracle.com/ch-de/java/technologies/java-ee-glance.html)                                                                     | In my internship at [ergon](https://www.ergon.ch/en) I got in touch with the Java EE stack and built a visual configurator with Java Swing and custom extensions. In my first project at _freiheit.com_ I also used [Spring Boot](https://spring.io/projects/spring-boot) to build a customizable real estate search.                                                                                                                                  |
 
-This site is built using [Gatsby](https://www.gatsbyjs.com/), a static site generator
-based on [React](https://reactjs.org/) allowing me to write this content in
-lovely simple
-[Markdown](https://guides.github.com/features/mastering-markdown/). The site is hosted
-on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
+</Container>
+
+<Container>
+
+<TitleSection title="Companies" subtitle="I worked for" />
+
+<Experience />
+
+</Container>
+
+<Container section>
+
+<TitleSection title="Education" subtitle="My Qualification" />
+
+<Education />
+
+</Container>
+
+<Container section>
 
 ## My work stack
 
@@ -61,5 +82,7 @@ on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
 | Inspiration | This I get from mindful Yoga breaks or by having a swim in the beautiful atlantic ocean.                                                 |  |
 
 
-![A shot I took at the Castelo Beach (Caparica) near Lisbon.](/img/atlantic_ocean.jpg)
+![A shot I took at the Castelo Beach (Caparica) near Lisbon.](../assets/images/atlantic_ocean.jpg)
 
+The site is hosted on [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
+</Container>

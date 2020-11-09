@@ -12,10 +12,10 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode });
     createNodeField({
-      name: `slug`,
+      name: `path`,
       node,
       value
     });
@@ -28,14 +28,15 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const res = await graphql(`
     query {
-      allMarkdownRemark(
-        filter: { frontmatter: { category: { eq: "blog" } } }
+      allMdx(
+        filter: {frontmatter: {category: {eq: "blog"}, published: {eq: true}}}
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {
+            slug
             fields {
-              slug
+              path
             }
             frontmatter {
               title
@@ -46,17 +47,17 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  const posts = res.data.allMarkdownRemark.edges;
+  const posts = res.data.allMdx.edges;
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
     const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
-      path: `${post.node.fields.slug}`,
+      path: `${post.node.fields.path}`,
       component: blogPostTemplate,
       context: {
-        slug: `${post.node.fields.slug}`,
+        slug: `${post.node.slug}`,
         previous,
         next
       }
