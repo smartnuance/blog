@@ -1,7 +1,7 @@
 ---
 category: 'services section'
 title: 'Services'
-subtitle: 'What I do'
+subtitle: 'Learn with me'
 ---
 
 I'm currently building up my company, evaluating the legal structure. This

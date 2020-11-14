@@ -5,8 +5,9 @@ import Banner from 'components/ui/Banner';
 
 import { SectionTitle } from 'helpers/definitions';
 
+import FormatHtml from 'components/utils/FormatHtml';
+
 interface SectionHeroBanner extends SectionTitle {
-  content: string;
   linkTo: string;
   linkText: string;
 }
@@ -18,10 +19,10 @@ const HeroBanner: React.FC = () => {
         frontmatter {
           title
           subtitle
-          content
           linkTo
           linkText
         }
+        html
       }
     }
   `);
@@ -32,10 +33,11 @@ const HeroBanner: React.FC = () => {
     <Banner
       title={heroBanner.title}
       subtitle={heroBanner.subtitle}
-      content={heroBanner.content}
       linkTo={heroBanner.linkTo}
       linkText={heroBanner.linkText}
-    />
+    >
+      <FormatHtml content={markdownRemark.html} />
+    </Banner>
   );
 };
 
