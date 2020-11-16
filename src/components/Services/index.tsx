@@ -18,6 +18,7 @@ export const Service: React.FC<ServiceProps> = ({ title, icon, children }) => {
         icon={icon}
         title={title}
         content={children}
+        collapsible={true}
       />
     </Styled.ServiceItem>
   );

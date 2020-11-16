@@ -3,6 +3,7 @@ import tw from 'tailwind.macro';
 
 export interface StyledProps {
   center?: boolean;
+  collapsed?: boolean;
 }
 
 export const InfoBlock = styled.div<StyledProps>`
@@ -22,6 +23,19 @@ export const Title = styled.h3`
   ${tw`text-md mt-1 font-semibold`};
 `;
 
-export const Content = styled.p`
-  ${tw`mt-1`};
+export const Content = styled.p<StyledProps>`
+  ${tw`mt-1 max-h-full overflow-hidden relative`};
+  ${({ center }) => center && tw`text-center`};
+  ${({ collapsed }) => collapsed && tw`h-64`};
+`;
+
+export const Overlay = styled.p`
+  ${tw`h-16 absolute inset-x-0 bottom-0 z-10`};
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+`;
+
+export const CollapseButton = styled.a<StyledProps>`
+  ${({ center }) => center && tw`text-center`};
+  ${tw`block w-full`};
 `;

@@ -15,7 +15,9 @@ import {
   faMapSigns,
   faFighterJet,
   faAward,
-  faUserGraduate
+  faUserGraduate,
+  faChevronDown,
+  faChevronUp
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
@@ -37,7 +39,9 @@ library.add(
   faAward,
   faUserGraduate,
   faPython,
-  faReact
+  faReact,
+  faChevronDown,
+  faChevronUp
 );
 
 export type IconProps = FontAwesomeIconProps['icon'];
