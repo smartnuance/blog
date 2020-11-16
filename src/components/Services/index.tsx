@@ -1,78 +1,36 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 
 import InfoBlock from 'components/ui/InfoBlock';
-import Container from 'components/ui/Container';
-import TitleSection from 'components/ui/TitleSection';
 import { IconProps } from 'components/ui/Icon';
-import FormatHtml from 'components/utils/FormatHtml';
-
-import { SectionTitle } from 'helpers/definitions';
 
 import * as Styled from './styles';
 
-interface Service {
-  node: {
-    id: string;
-    frontmatter: {
-      title: string;
-      icon: IconProps;
-      description: string;
-    };
-  };
+interface ServiceProps {
+  title: string;
+  icon: IconProps;
+  children: React.ReactNode;
 }
 
-const Services: React.FC = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      markdownRemark(frontmatter: { category: { eq: "services section" } }) {
-        html
-        frontmatter {
-          title
-          subtitle
-        }
-      }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "services" } } }, sort: { fields: fileAbsolutePath }) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              icon
-              description
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const sectionTitle: SectionTitle = markdownRemark.frontmatter;
-  const prelude = markdownRemark.html
-  const services: Service[] = allMarkdownRemark.edges;
-
+export const Service: React.FC<ServiceProps> = ({ title, icon, children }) => {
   return (
-    <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      <Styled.Services>
-        {services.map((item) => {
-          const {
-            id,
-            frontmatter: { title, icon, description }
-          } = item.node;
-
-          return (
-            <Styled.ServiceItem key={id}>
-              <InfoBlock icon={icon} title={title} content={description} />
-            </Styled.ServiceItem>
-          );
-        })}
-      </Styled.Services>
-      <Styled.Content>
-        <FormatHtml content={prelude} />
-      </Styled.Content>
-    </Container>
+    <Styled.ServiceItem>
+      <InfoBlock
+        icon={icon}
+        title={title}
+        content={children}
+      />
+    </Styled.ServiceItem>
   );
 };
 
-export default Services;
+interface ServicesProps {
+  children: React.ReactElement<ServiceProps>[];
+}
+
+export const Services: React.FC<ServicesProps> = ({ children }) => {
+  return (
+    <Styled.Services>
+      {children}
+    </Styled.Services>
+  );
+};

@@ -1,12 +1,91 @@
+import Container from 'components/ui/Container';
+import TitleSection from 'components/ui/TitleSection';
+
 import SEO from 'components/SEO';
 import HeroBanner from 'components/HeroBanner';
-import Services from 'components/Services';
+import { Services, Service } from 'components/Services';
 
 <SEO title="About" />
 
+<HeroBanner />
+
 <Container section>
-  <HeroBanner />
+
+Contact me and we can discuss your challenge and how I could be helpful to tackle it:
+
+**smartnuance@tutanota.com**
+
 </Container>
 
-<Services />
-      
+<Container section>
+<TitleSection title="for individuals" subtitle="Learn with me" center />
+<Services>
+<Service title="Learn programming" icon="user-graduate">
+
+Learn programming with a set of courses I compile for your needs and your prior knowledge. While you are taking the courses I'm ready to help you with specific questions the course creators left open and are not available to answer. My usual choices to start to learn programming are:
+- **Python 3**, if you have a scientific background and your goal is to automate parts of your work flow or you want to use any type of machine learning.
+- **Golang**, if you want to learn programming from scratch, or your intention is to become a versatile developer capable to build modular systems of any scale.
+- **TypeScript** & **React**, if you are or want to become a frontend developer that ties together functionality from any ready-to-use backend/SaaS out there. Of course we also have to use (as little as possible) of HTML/CSS for markup and styling. To keep that mess under control I currently favor [styled components](https://styled-components.com/) for styling react components using [tailwindcss](https://tailwindcss.com/) as your CSS framework.
+
+</Service>
+<Service title="Custom advanced coding support & code reviews" icon="award">
+
+I advise you with your current project or professional work. When we solved potential NDA questions, we directly jump into your code together, I give you a hand to solve your most challenging problems or help you through the parts most difficult to grasp. From there I support you by
+
+- code reviews for critical PRs
+- pair programming sessions
+- my direct contributions for fundamental architectorial changes, refactorings or new integrations of libraries we decided to integrate
+
+</Service>
+</Services>
+
+<TitleSection title="for startups" subtitle="Grow with me" center />
+<Services>
+<Service title="Architecture for your purpose" icon="shapes">
+
+I help you finding the right choices for your tech stack. Carefully evaluated, honestly judged we will find the best fit for your needs. If it happens that tech decided on does not belong to my core specialities, I might adapt it quickly or I will recommend you somebody from my network that is able to support you even quicker. 
+
+</Service>
+<Service title="Train your team" icon="chalkboard-teacher">
+
+You have chosen your tech and tools but your team is not efficient yet? Or they are efficient delivering code but as a team they are not _effective_ to reach your business goal? In my experience, proper training can double or triple the _effectivness_. This is mainly achieved by developers becoming more confortable with their craft. They become more focused, take initiative and ownership for the parts they know best. And last but not least, they will have more fun to build and get that thing done!
+
+</Service>
+<Service title="Establish engineering standards" icon="map-signs">
+
+For larger software products, a minimal set of _engineering standards_ are inevitable. As a code base grows, developers will spend more time _reading code_. **Coding standards** ensure code is written in a consistent style, which sole purpose is to make _code easier to read_. The "rules" are best defined together with the team and are validated before they get applied to the greater part of your code base. Once established, the standards get enforced by linters and the like as part of your CI/CD.
+
+</Service>
+</Services>
+
+<TitleSection title="for companies" subtitle="Count on me" center />
+<Services>
+<Service title="Boost your product" icon="laptop-code">
+
+Hire me as a freelancer for the critical phase of your new product. Profit from my profound experience with a [huge number of technologies](/resume).
+
+</Service>
+<Service title="Boost your team" icon="fighter-jet">
+
+Delivering on my own is easy but limited by my finite time. That's why I prefer collaborations where I work closely with a team and empower them in a few months to do fine without me or having me just as an occacional reviewer or last resort for difficult decisions. I achieve this by coaching team members individually, exemplifying a culture of humble learning and teaching. I never capture knowledge, I share it openly until team members are perfectly ready to take over my lead. I ensure this by
+- helping to find consensus of fundamental tech choices
+- writing excellent documentation for technical design decisions and established engineering standards
+- using tutorial style docs & even videos to provide a seemless onboarding experience for new team joiners
+
+</Service>
+</Services>
+
+</Container>
+
+<Container section>
+
+If any of my services got your interest, contact me and we can discuss your challenge and how I could be helpful to tackle it:
+
+**smartnuance@tutanota.com**
+
+I'm currently building up my company, evaluating the legal structure. This
+includes the idea to found a cooperative with cool volks I know and trust. I
+believe today's challenges of digitalizing whole sectors require very dynamic
+and diverse teams and continous education.
+
+</Container>
