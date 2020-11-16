@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `SMARTnuance`,
-    description: `Offers and blog of SMARTnuance, expert and pragmatic full stack development and end-to-end product ownership.`,
+    description: `Services and blog of SMARTnuance, expert and pragmatic full stack development and end-to-end product ownership & coaching.`,
     author: `Simon Wehrli`
   },
   plugins: [
