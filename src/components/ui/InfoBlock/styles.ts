@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
+import { animated } from 'react-spring';
 
 export interface StyledProps {
   center?: boolean;
@@ -23,10 +24,9 @@ export const Title = styled.h3`
   ${tw`text-md mt-1 font-semibold`};
 `;
 
-export const Content = styled.p<StyledProps>`
-  ${tw`mt-1 max-h-full overflow-hidden relative`};
-  ${({ center }) => center && tw`text-center`};
-  ${({ collapsed }) => collapsed && tw`h-64`};
+export const Content = styled(animated.div)`
+  ${tw`mt-1 overflow-hidden relative`};
+  ${(props: StyledProps) => props.center && tw`text-center`};
 `;
 
 export const Overlay = styled.p`
