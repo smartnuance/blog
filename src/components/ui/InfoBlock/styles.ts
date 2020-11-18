@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
-import { animated } from 'react-spring';
+import { motion } from 'framer-motion';
 
 export interface StyledProps {
   center?: boolean;
@@ -24,7 +24,9 @@ export const Title = styled.h3`
   ${tw`text-md mt-1 font-semibold`};
 `;
 
-export const Content = styled(animated.div)`
+export const defaultContentHeight = 300;
+
+export const Content = styled(motion.div)`
   ${tw`mt-1 overflow-hidden relative`};
   ${(props: StyledProps) => props.center && tw`text-center`};
 `;
