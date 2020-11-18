@@ -5,10 +5,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import Newsletter from 'components/Newsletter';
+import Link from 'gatsby-link';
+import Container from 'components/ui/Container';
+import SEO from 'components/SEO';
+import TitleSection from 'components/ui/TitleSection';
+import { MDXProvider } from '@mdx-js/react';
 
 import 'assets/styles/global.css';
 import GlobalStyles from 'assets/styles/globalStyles';
 import * as Styled from './styles';
+
+// common components usable in mdx files without explicit imports
+const shortcodes = { SEO, Container, TitleSection, Link };
 
 interface Props {
   children: React.ReactNode;
@@ -37,7 +45,7 @@ const Layout: React.FC<Props> = ({ children }) => {
             exit={{ opacity: 0 }}
             transition={{ delay: 0.2 }}
           >
-            {children}
+            <MDXProvider components={shortcodes}>{children}</MDXProvider>
             {/* <Newsletter /> */}
             <Footer />
           </motion.div>

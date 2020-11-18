@@ -7,14 +7,11 @@ import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
-import { MDXProvider } from '@mdx-js/react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import { ImageSharpFluid } from 'helpers/definitions';
 
 import * as Styled from './styles';
-
-const shortcodes = { Link }; // Provide common components here
 
 interface Post {
   body: string;
@@ -61,9 +58,7 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
           <Img fluid={cover.childImageSharp.fluid} alt={post.frontmatter.title} />
         </Styled.Image>
         <TitleSection title={post.frontmatter.date} subtitle={post.frontmatter.title} />
-        <MDXProvider components={shortcodes}>
-          <MDXRenderer>{post.body}</MDXRenderer>
-        </MDXProvider>
+        <MDXRenderer>{post.body}</MDXRenderer>
         <Styled.Links>
           <span>
             {previous && (
