@@ -14,9 +14,10 @@ import { MDXProvider } from '@mdx-js/react';
 import 'assets/styles/global.css';
 import GlobalStyles from 'assets/styles/globalStyles';
 import * as Styled from './styles';
+import Quote from 'components/ui/Quote';
 
 // common components usable in mdx files without explicit imports
-const shortcodes = { SEO, Container, TitleSection, Link };
+const shortcodes = { blockquote: Quote, SEO, Container, TitleSection, Link };
 
 interface Props {
   children: React.ReactNode;
