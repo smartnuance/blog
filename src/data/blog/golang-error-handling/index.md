@@ -28,7 +28,7 @@ try {
 ```
 
 And libraries or you yourself can throw an Exception wherever they or you
-encounter a state they do not know how to handle. By throwing an Exception, you
+encounter a state they do not know-how to handle. By throwing an Exception, you
 are basically saying
 
 > Somebody else must handle this mess, I'm just cleaning my table and leaving.
@@ -40,7 +40,7 @@ This two points shouldn't be too far from each other, otherwise as a caller, we
 need a lot of knowledge about the internals of a machinery we just want to
 invoke to get some result. Actually, getting resources always cleaned up
 correcty is hard to get right and many memory leaks result from Exceptions
-thrown without proper cleaning of **what the caller can not know how to clean
+thrown without proper cleaning of **what the caller can not know-how to clean
 up**.
 
 ## What is an error?
