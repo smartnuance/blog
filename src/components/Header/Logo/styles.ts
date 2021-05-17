@@ -7,13 +7,9 @@ export const Logo = styled(Link)`
 `;
 
 export const Text = styled.h1`
-  ${tw`text-lg`};
+  ${tw`text-lg m-0`};
 `;
 
 export const Image = styled.figure`
-  ${tw`w-16 h-16 mr-3 border border-teal-400 rounded-full`};
-
-  img {
-    ${tw`border-4 border-white rounded-full`};
-  }
+  ${tw`w-16 h-16 mr-3 border border-teal-400 rounded-full p-2`};
 `;
