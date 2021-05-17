@@ -125,7 +125,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `smartnuance-website`,
-        short_name: `SMARTnuance`,
+        short_name: `smartnuance`,
         start_url: `/`,
         background_color: `#81e6d9`,
         theme_color: `#81e6d9`,

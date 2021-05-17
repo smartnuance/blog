@@ -1,7 +1,7 @@
 {
   "name": "smartnuance-website",
   "private": true,
-  "description": "Services and blog of SMARTnuance, expert and pragmatic full stack development and end-to-end product ownership & coaching.",
+  "description": "Services and blog of smartnuance, expert and pragmatic full stack development and end-to-end product ownership & coaching.",
   "version": "0.1.0",
   "author": "Simon Wehrli",
   "dependencies": {
