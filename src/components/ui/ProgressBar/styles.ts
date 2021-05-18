@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
+import tw from 'twin.macro';
 
 export interface StyledProps {
   percentage: number;
@@ -14,7 +14,7 @@ export const BarWrapper = styled.div`
 `;
 
 export const Bar = styled.div<StyledProps>`
-  ${tw`h-2 bg-teal-400`};
+  ${tw`h-2 bg-purple-400`};
   width: ${({ percentage }) => `${percentage}%`};
 `;
 

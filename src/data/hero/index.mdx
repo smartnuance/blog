@@ -1,10 +1,3 @@
----
-title: 'Software engineer & Trainer'
-subtitle: 'I am Simon'
-linkTo: '/resume/'
-linkText: 'View My Profile'
----
-
 import Banner from '../../components/ui/Banner';
 
 I'm a visionary for software engineering and a pragmatist in writing code. I love teaching how I build stuff with the click-clacks of my keyboard because I'm talented in explaining. If a culture of conveying know-how to team mates prevails, even complex software projects will succeed.
@@ -12,10 +5,10 @@ I'm a visionary for software engineering and a pragmatist in writing code. I lov
 export default function HeroBanner(props) {
   return (
     <Banner
-      title={props._frontmatter.title}
-      subtitle={props._frontmatter.subtitle}
-      linkTo={props._frontmatter.linkTo}
-      linkText={props._frontmatter.linkText}
+      title='Software engineer & Trainer'
+      subtitle='I am Simon'
+      linkTo='/resume/'
+      linkText='View My Profile'
     >
       {props.children}
     </Banner>

@@ -1,9 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import tw from 'tailwind.macro';
+import tw from 'twin.macro';
 
 export default createGlobalStyle`
   body {
-    ${tw`m-0 text-indigo-900 bg-white`};
+    ${tw`m-0 bg-white`};
   }
 
   a {

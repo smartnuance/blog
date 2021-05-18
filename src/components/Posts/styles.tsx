@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
+import tw from 'twin.macro';
 
 export const Posts = styled.div`
   ${tw`w-full flex flex-wrap`};
@@ -36,5 +36,5 @@ export const Tags = styled.div`
 `;
 
 export const Tag = styled.span`
-  ${tw`text-xs text-indigo-900 border border-teal-400 rounded-full px-2 py-1 mr-2`}
+  ${tw`text-xs text-indigo-900 border border-purple-400 rounded-full px-2 py-1 mr-2`}
 `;

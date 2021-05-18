@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
+import tw from 'twin.macro';
 import { motion } from 'framer-motion';
 
 export interface StyledProps {
@@ -13,7 +13,7 @@ export const InfoBlock = styled.div<StyledProps>`
 `;
 
 export const Icon = styled.span`
-  ${tw`flex items-center justify-center w-10 h-10 text-indigo-500 border border-teal-400 rounded-full mb-2`};
+  ${tw`flex items-center justify-center w-10 h-10 text-indigo-500 border border-purple-400 rounded-full mb-2`};
 `;
 
 export const Wrapper = styled.div<StyledProps>`
@@ -21,7 +21,7 @@ export const Wrapper = styled.div<StyledProps>`
 `;
 
 export const Title = styled.h3`
-  ${tw`text-md mt-1 font-semibold`};
+  ${tw`mt-1 font-semibold`};
 `;
 
 export const defaultContentHeight = 300;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import tw from 'tailwind.macro';
+import tw from 'twin.macro';
 import { Link } from 'gatsby';
 
 export const Logo = styled(Link)`
@@ -11,5 +11,5 @@ export const Text = styled.h1`
 `;
 
 export const Image = styled.figure`
-  ${tw`w-16 h-16 mr-3 border border-teal-400 rounded-full p-2`};
+  ${tw`w-16 h-16 mr-3 border border-purple-400 rounded-full p-2`};
 `;
