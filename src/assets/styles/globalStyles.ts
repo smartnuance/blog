@@ -45,4 +45,8 @@ export default createGlobalStyle`
   td {
     ${tw`px-5 py-5 border-b border-gray-200 text-sm align-top`};
   }
+
+  figcaption {
+    ${tw`text-center mt-2 text-gray-600`};
+  }
 `;

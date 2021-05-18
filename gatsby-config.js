@@ -47,7 +47,8 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 768,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: true,
+              showCaptions: true
             }
           },
           'gatsby-remark-copy-linked-files',
@@ -103,13 +104,6 @@ module.exports = {
                   },
                 },
               ],
-              // Customize the prompt used in shell output
-              // Values below are default
-              prompt: {
-                user: "root",
-                host: "localhost",
-                global: false,
-              },
               // By default the HTML entities <>&'" are escaped.
               // Add additional HTML escapes by providing a mapping
               // of HTML entities and their escape value IE: { '}': '&#123;' }
