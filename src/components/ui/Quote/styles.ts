@@ -6,7 +6,7 @@ export const Quote = styled.blockquote`
 `;
 
 export const Hyphen = styled.div`
-  font-size: 5rem;
+  font-size: 3rem;
   right: 100%;
-  ${tw`mr-2 font-mono absolute top-0 leading-none`}
+  ${tw`pt-4 mr-2 font-mono absolute top-0 leading-none text-indigo-600`}
 `;

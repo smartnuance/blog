@@ -11,5 +11,5 @@ export const Text = styled.h1`
 `;
 
 export const Image = styled.figure`
-  ${tw`w-16 h-16 mr-3 border border-purple-400 rounded-full p-2`};
+  ${tw`w-16 h-16 mr-3 border border-green-300 rounded-full p-2`};
 `;

@@ -8,12 +8,12 @@ export interface StyledProps {
 }
 
 export const InfoBlock = styled.div<StyledProps>`
-  ${tw`flex flex-col my-4 mx-3 p-4 bg-white rounded-lg border border-gray-300`};
+  ${tw`flex flex-col my-4 mx-3 p-4 bg-white rounded-lg border border-gray-200`};
   ${({ center }) => center && tw`items-center`};
 `;
 
 export const Icon = styled.span`
-  ${tw`flex items-center justify-center w-10 h-10 text-indigo-500 border border-purple-400 rounded-full mb-2`};
+  ${tw`flex items-center justify-center w-10 h-10 text-indigo-500 border border-green-300 rounded-full mb-2`};
 `;
 
 export const Wrapper = styled.div<StyledProps>`

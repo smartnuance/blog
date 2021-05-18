@@ -26,7 +26,7 @@ export const Subtitle = styled.div`
 `;
 
 export const Date = styled.div`
-  ${tw`text-xs border  border-purple-400 rounded-full px-2`};
+  ${tw`text-xs border  border-green-300 rounded-full px-2`};
   width: fit-content;
 `;
 
