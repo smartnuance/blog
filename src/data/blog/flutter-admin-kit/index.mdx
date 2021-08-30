@@ -1,9 +1,10 @@
 ---
 category: 'blog'
-title: A flutter admin kit - Insights
+type: 'project'
+title: Introducing flutter admin kit
 cover: './dashboard-view.png'
 head_cover: './dashboard-view.png'
-description: Build a generative, customized admin for all platforms. Nice to use and nice to extend.
+description: Use my starter to build a generative, customized admin for all platforms. Nice to use and nice to extend.
 date: '2021-08-24'
 tags: [Flutter, State management, Dart]
 published: true
@@ -11,15 +12,37 @@ published: true
 
 import VimeoPlayer from 'components/VimeoPlayer';
 
-Jump directly to the [code on Github](https://github.com/smartnuance/flutter-admin-kit).
+View [code on Github](https://github.com/smartnuance/flutter-admin-kit).
 
-## Introduction
+## What is flutter admin kit?
+
+The flutter admin kit combines the fine art of an interactive web frontend with a powerful data abstraction layer. The goal is
+to provide a kit, also called a starter template, that reduces the boring boilerplate necessary to get the basics of authentication and CRUD functionality
+on your models done. At the same time you should be able to use the component based approach of Flutter to create and plug your complex UI elements _wherever you want them_,
+without starting over dealing with list paging/scrolling, URL routes setup, low-level form handling, savepoints when editing, error handling and all that stuff
+we just expect _from a modern web interface_.
+
+This is achieved by combining state-of-the-art libraries that give strong (and strict) guidelines that will keep the admin interface
+cleanly organized and modular in certain concerns. For example you should be able to jump anywhere by a link, not breaking/loosing your state.
+If a user has started a user journey that must be completed he should be informed about effects of switching to another view.
+
+Technically these are the highlights implemented so far:
+
+- Declarative routing via global state, organized with [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
+
+- Model list view dynamically generated from config files and an inspection API
+
+- Authentication with OAuth based on auto-refreshed JWTs
+
+- Debug panel for live inspection of global state for a nice learning experience :)
 
 <VimeoPlayer video={591284010} />
 
 ## State management
 
 I'm going through the list of used packages and explain why they are useful. You can find the up-to-date list in [pubspec.yaml](https://github.com/smartnuance/flutter-admin-kit/blob/main/pubspec.yaml).
+
+Then we see how state is organized in a composable way and how the visualization as a graph makes it simple and clear.
 
 <VimeoPlayer video={591284233} />
 
