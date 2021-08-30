@@ -1,5 +1,6 @@
 import HeroBanner from '../data/hero';
 import { Services, Service } from 'components/Services';
+import Projects from 'components/Projects';
 
 <SEO title="About" />
 
@@ -14,27 +15,11 @@ Contact me and we can discuss your challenge and how I could be helpful to tackl
 </Container>
 
 <Container section>
-<TitleSection title="for individuals" subtitle="Learn with me" center />
-<Services>
-<Service title="Learn programming (Coming soon)" icon="user-graduate">
+<TitleSection title="Open source" subtitle="My current projects" center />
+<Projects />
+</Container>
 
-Learn programming with a set of courses I compile for your needs and your prior knowledge. While you are taking the courses I'm ready to help you with specific questions the course creators left open and are not available to answer. My usual choices to start to learn programming are:
-- **Python 3**, if you have a scientific background and your goal is to automate parts of your work flow or you want to use any type of machine learning.
-- **Golang**, if you want to learn programming from scratch, or your intention is to become a versatile developer capable to build modular systems of any scale.
-- **TypeScript** & **React**, if you are or want to become a frontend developer that ties together functionality from any ready-to-use backend/SaaS out there. Of course we also have to use (as little as possible) of HTML/CSS for markup and styling. To keep that mess under control I currently favor [styled components](https://styled-components.com/) for styling react components using [tailwindcss](https://tailwindcss.com/) as your CSS framework.
-
-</Service>
-<Service title="Custom advanced coding support & code reviews" icon="award">
-
-I advise you with your current project or professional work. When we solved potential NDA questions, we directly jump into your code together, I give you a hand to solve your most challenging problems or help you through the parts most difficult to grasp. From there I support you by
-
-- code reviews for critical PRs
-- pair programming sessions
-- my direct contributions for fundamental architectorial changes, refactorings or new integrations of libraries we decided to integrate
-
-</Service>
-</Services>
-
+<Container section>
 <TitleSection title="for startups" subtitle="Grow with me" center />
 <Services>
 <Service title="API-centric architecture" icon="shapes">
