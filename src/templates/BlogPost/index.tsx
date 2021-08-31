@@ -20,6 +20,7 @@ interface Post {
     title: string;
     date: string;
     cover: IGatsbyImageData;
+    cover_og: IGatsbyImageData;
     head_cover: IGatsbyImageData;
   };
 }
@@ -38,13 +39,12 @@ interface Props {
 const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
   const post = data.mdx;
   const { previous, next } = pageContext;
-  const cover = post.frontmatter.head_cover || post.frontmatter.cover;
 
-  const image = getImage(cover);
+  const image = getImage(post.frontmatter.head_cover || post.frontmatter.cover);
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO title={post.frontmatter.title} image={post.frontmatter.cover_og} />
       <Container section>
         {image && (
           <Styled.Image>
@@ -86,6 +86,11 @@ export const query = graphql`
         cover {
           childImageSharp {
             gatsbyImageData(width: 800, layout: CONSTRAINED)
+          }
+        }
+        cover_og: cover {
+          childImageSharp {
+            gatsbyImageData(width: 1200, height: 630, layout: FIXED, transformOptions: {fit: CONTAIN})
           }
         }
         head_cover {

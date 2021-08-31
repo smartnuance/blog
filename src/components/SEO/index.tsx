@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { GatsbyImage, getImage, getSrc, IGatsbyImageData, ImageDataLike } from 'gatsby-plugin-image';
 
 type Meta =
   | {
@@ -17,9 +18,10 @@ interface Props {
   lang?: string;
   meta?: Meta[];
   title: string;
+  image?: ImageDataLike;
 }
 
-const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
+const SEO: React.FC<Props> = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -35,6 +37,11 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const imageSrc = image && getSrc(image);
+  const ogImage = imageSrc ? [{
+    name: `og:image`,
+    content: imageSrc
+  }] : [];
 
   return (
     <Helmet
@@ -75,7 +82,8 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription
-        }
+        },
+        ...ogImage
       ].concat(meta!)}
     />
   );
