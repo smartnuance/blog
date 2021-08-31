@@ -1,12 +1,12 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
-import Link from 'gatsby-link';
-import { motion } from 'framer-motion';
-
 import Container from 'components/ui/Container';
-
+import { motion } from 'framer-motion';
+import { graphql, useStaticQuery } from 'gatsby';
+import Link from 'gatsby-link';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import React from 'react';
 import * as Styled from './styles';
+
+
 
 interface Post {
   node: {

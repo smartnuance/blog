@@ -1,15 +1,15 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import Link from 'gatsby-link';
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
-
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
+import { graphql } from 'gatsby';
+import Link from 'gatsby-link';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-
+import React from 'react';
 import * as Styled from './styles';
+
+
 
 interface Post {
   body: string;
@@ -90,7 +90,7 @@ export const query = graphql`
         }
         cover_og: cover {
           childImageSharp {
-            gatsbyImageData(width: 1200, height: 630, layout: FIXED, transformOptions: {fit: CONTAIN})
+            gatsbyImageData(width: 1200, height: 630, layout: FIXED, transformOptions: { fit: CONTAIN })
           }
         }
         head_cover {

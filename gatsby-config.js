@@ -32,7 +32,7 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
-          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-copy-linked-files'
         ]
       }
     },
@@ -41,7 +41,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         defaultLayouts: {
-          default: require.resolve(`./src/components/Layout/index.tsx`),
+          default: require.resolve(`./src/components/Layout/index.tsx`)
         },
         gatsbyRemarkPlugins: [
           {
@@ -63,7 +63,7 @@ module.exports = {
               // you may use this to prevent Prism from re-processing syntax.
               // This is an uncommon use-case though;
               // If you're unsure, it's best to use the default value.
-              classPrefix: "language-",
+              classPrefix: 'language-',
               // This is used to allow setting a language for inline code
               // (i.e. single backticks) by creating a separator.
               // This separator is a string and will do no white-space
@@ -93,25 +93,25 @@ module.exports = {
               // existing language" below.
               languageExtensions: [
                 {
-                  language: "superscript",
-                  extend: "javascript",
+                  language: 'superscript',
+                  extend: 'javascript',
                   definition: {
-                    superscript_types: /(SuperType)/,
+                    superscript_types: /(SuperType)/
                   },
                   insertBefore: {
                     function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
+                      superscript_keywords: /(superif|superelse)/
+                    }
+                  }
+                }
               ],
               // By default the HTML entities <>&'" are escaped.
               // Add additional HTML escapes by providing a mapping
               // of HTML entities and their escape value IE: { '}': '&#123;' }
-              escapeEntities: {},
-            },
-          },
-        ],
+              escapeEntities: {}
+            }
+          }
+        ]
       }
     },
     `gatsby-plugin-image`,

@@ -1,7 +1,7 @@
+import { graphql, useStaticQuery } from 'gatsby';
+import { getSrc, ImageDataLike } from 'gatsby-plugin-image';
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage, getSrc, IGatsbyImageData, ImageDataLike } from 'gatsby-plugin-image';
 
 type Meta =
   | {
@@ -38,10 +38,14 @@ const SEO: React.FC<Props> = ({ description, lang, meta, title, image }) => {
 
   const metaDescription = description || site.siteMetadata.description;
   const imageSrc = image && getSrc(image);
-  const ogImage = imageSrc ? [{
-    name: `og:image`,
-    content: imageSrc
-  }] : [];
+  const ogImage = imageSrc
+    ? [
+        {
+          name: `og:image`,
+          content: imageSrc
+        }
+      ]
+    : [];
 
   return (
     <Helmet
