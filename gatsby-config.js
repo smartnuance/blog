@@ -36,6 +36,7 @@ module.exports = {
         ]
       }
     },
+    'gatsby-remark-images',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -113,6 +114,7 @@ module.exports = {
         ],
       }
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

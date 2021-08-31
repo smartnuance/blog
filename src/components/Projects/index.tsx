@@ -2,9 +2,8 @@ import Container from 'components/ui/Container';
 import Icon from 'components/ui/Icon';
 import { motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Link from 'gatsby-link';
-import { ImageSharpFluid } from 'helpers/definitions';
 import React from 'react';
 import * as Styled from './styles';
 
@@ -19,18 +18,14 @@ interface Project {
       description: string;
       date: string;
       tags: string[];
-      cover: {
-        childImageSharp: {
-          fluid: ImageSharpFluid;
-        };
-      };
+      cover: IGatsbyImageData;
     };
   };
 }
 
 const Projects: React.FC = () => {
   const { allMdx } = useStaticQuery(graphql`
-    query {
+    {
       allMdx(
         filter: { frontmatter: { category: { eq: "blog" }, type: { eq: "project" }, published: { eq: true } } }
         sort: { fields: frontmatter___date, order: DESC }
@@ -48,9 +43,7 @@ const Projects: React.FC = () => {
               tags
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 800, layout: CONSTRAINED)
                 }
               }
             }
@@ -71,14 +64,17 @@ const Projects: React.FC = () => {
           frontmatter: { title, cover, description, date, tags }
         } = item.node;
 
+        const image = getImage(cover);
         return (
           <Styled.Post key={id}>
             <Link to={path}>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
                 <Styled.Card>
-                  <Styled.Image>
-                    <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                  </Styled.Image>
+                  {image && (
+                    <Styled.Image>
+                      <GatsbyImage image={image} alt={title} />
+                    </Styled.Image>
+                  )}
                   <Styled.Content>
                     <Styled.Date>{date}</Styled.Date>
                     <Styled.Title>{title}</Styled.Title>
@@ -90,8 +86,8 @@ const Projects: React.FC = () => {
                     ))}
                   </Styled.Tags>
                   <Styled.Icon>
-                      <Icon icon="code-branch" />
-                </Styled.Icon>
+                    <Icon icon="code-branch" />
+                  </Styled.Icon>
                 </Styled.Card>
               </motion.div>
             </Link>

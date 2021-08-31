@@ -1,13 +1,13 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Loadable from '@loadable/component';
 
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 
-import { SectionTitle, ImageSharpFluid } from 'helpers/definitions';
+import { SectionTitle } from 'helpers/definitions';
 
 import * as Styled from './styles';
 
@@ -19,18 +19,14 @@ interface Testimonial {
     html: string;
     frontmatter: {
       title: string;
-      cover: {
-        childImageSharp: {
-          fluid: ImageSharpFluid;
-        };
-      };
+      cover: IGatsbyImageData;
     };
   };
 }
 
 const Testimonials: React.FC = () => {
   const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
-    query {
+    {
       markdownRemark(frontmatter: { category: { eq: "testimonials section" } }) {
         frontmatter {
           title
@@ -46,9 +42,7 @@ const Testimonials: React.FC = () => {
               title
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 80) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 80, layout: CONSTRAINED)
                 }
               }
             }
@@ -73,11 +67,15 @@ const Testimonials: React.FC = () => {
               frontmatter: { cover, title }
             } = item.node;
 
+            const image = getImage(cover);
+
             return (
               <Styled.Testimonial key={id}>
-                <Styled.Image>
-                  <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                </Styled.Image>
+                {image && (
+                  <Styled.Image>
+                    <GatsbyImage image={cover} alt={title} />
+                  </Styled.Image>
+                )}
                 <Styled.Title>{title}</Styled.Title>
                 <FormatHtml content={html} />
               </Styled.Testimonial>

@@ -1,15 +1,13 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Link from 'gatsby-link';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
-
-import { ImageSharpFluid } from 'helpers/definitions';
 
 import * as Styled from './styles';
 
@@ -21,16 +19,8 @@ interface Post {
   frontmatter: {
     title: string;
     date: string;
-    cover: {
-      childImageSharp: {
-        fluid: ImageSharpFluid;
-      };
-    };
-    head_cover: {
-      childImageSharp: {
-        fluid: ImageSharpFluid;
-      };
-    };
+    cover: IGatsbyImageData;
+    head_cover: IGatsbyImageData;
   };
 }
 
@@ -50,13 +40,17 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
   const { previous, next } = pageContext;
   const cover = post.frontmatter.head_cover || post.frontmatter.cover;
 
+  const image = getImage(cover);
+
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
       <Container section>
-        <Styled.Image>
-          <Img fluid={cover.childImageSharp.fluid} alt={post.frontmatter.title} />
-        </Styled.Image>
+        {image && (
+          <Styled.Image>
+            <GatsbyImage image={image} alt={post.frontmatter.title} />
+          </Styled.Image>
+        )}
         <TitleSection title={post.frontmatter.date} subtitle={post.frontmatter.title} />
         <MDXRenderer>{post.body}</MDXRenderer>
         <Styled.Links>
@@ -91,16 +85,12 @@ export const query = graphql`
         date(formatString: "D. MMMM YYYY")
         cover {
           childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 800, layout: CONSTRAINED)
           }
         }
         head_cover {
           childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(width: 800, layout: CONSTRAINED)
           }
         }
       }
