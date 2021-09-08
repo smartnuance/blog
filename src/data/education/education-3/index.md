@@ -1,7 +1,7 @@
 ---
 category: 'education'
 university: 'tanzquotient.org'
-degree: 'IT & Board Member (Volutary work)'
+degree: 'IT & Board Member (Voluntary work)'
 startDate: '2014'
 endDate: '2017'
 ---
