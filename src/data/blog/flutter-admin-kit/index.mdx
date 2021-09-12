@@ -40,21 +40,92 @@ Technically these are the highlights implemented so far:
 
 ## State management
 
-I'm going through the list of used packages and explain why they are useful. You can find the up-to-date list in [pubspec.yaml](https://github.com/smartnuance/flutter-admin-kit/blob/main/pubspec.yaml).
+In this video I'm gooing through the list of used packages and explain why they are useful. You can find the up-to-date list in [pubspec.yaml](https://github.com/smartnuance/flutter-admin-kit/blob/main/pubspec.yaml).
 
-Then we see how state is organized in a composable way and how the visualization as a graph makes it simple and clear.
+
+Then we look at the most opinionated decision of flutter-admin-kit: how most state is organized globally and interconnected in a composable pattern:
+
+```dart{2}{numberLines: true}
+final titleProvider = StateProvider<String>((ref) {
+  final mainView = ref.watch(mainViewProvider);
+
+  return mainView.state?.map(
+        resolved: (view) => 'View Not loaded',
+        loaded: (view) => view.view.title,
+        notFound: (view) => 'Not found',
+      ) ??
+      '';
+});
+```
+
+I try to support the mental model by visualizing state providers and their dependencies as a graph.
+
+(you can fast-forward to specific chapters marked with (_code_) and (_diagram_) via the index)
 
 <VimeoPlayer video={591284233} />
 
 ## Declarative routing by global state
 
-(Video coming soon)
+The flutter-admin-kit supports advanced routing with [the updated navigation and routing mechanism (2.0)](https://flutter.dev/docs/development/ui/navigation). This mechanism is different to the imperative push/pop-manner and introduces _declarative routing_. The declarative approach is a better fit for globally defined navigation state.
+The main switch is made by using the `MaterialApp.router` factory constructor:
+```dart{2,3}{numberLines: true}
+return MaterialApp.router(
+        routerDelegate: delegate,
+        routeInformationParser: _routeInformationParser,
+        // ...
+    );
+```
+The declarativity is hidden in `delegate`. The delegate is our custom subclass of `RouterDelegate<RoutedView>` and has two parts:
+
+- It's a widget by itself, hence defines a `build` method, and this builds the current page. Each page is a `MaterialPage` widget that Flutter knows how to layer up and animate on route changes.
+
+```dart{3,10}{numberLines: true}
+Widget build(BuildContext context, WidgetRef ref) {
+    // watch the current viewstack and trigger rebuilds when it updates
+    final viewStack = ref.watch(viewStackProvider);
+
+    // map views on page stack to actual flutter widgets representing pages
+    final pages = viewStack.map((view) => _mapViewToPage(context, view, ref)).toList();
+
+    return Navigator(
+        key: navigatorKey,
+        pages: pages,
+        onPopPage: (route, dynamic result) {
+            // ...
+        },
+    );
+}
+```
+
+- It wires up the Flutter navigation machinery with our custom handling of navigation state (with [riverpod](https://pub.dev/packages/flutter_riverpod)'s global state management). This includes settings up notification in both directions
+    - upon changes in our global state hierarchy that have an effect on navigation
+    - and incoming route changes passed on to us by Flutter.
+
+```dart{2,5,8}{numberLines: true}
+@override
+Future<void> setNewRoutePath(RoutedView configuration) async {}
+
+@override
+RoutedView? get currentConfiguration {}
+
+@override
+Future<bool> popRoute() async {}
+
+@override
+void addListener(VoidCallback listener) {}
+
+@override
+void removeListener(VoidCallback listener) {}
+```
+
+(you can fast-forward to specific chapters marked with (_code_) and (_diagram_) via the index)
+
+<VimeoPlayer video={601048009} />
 
 ## Token Authentication
 
-(Video coming soon)
-
-## Summary
+Modern authentication schemes can be confusing, the important bits get easily burried in protocol details or the math behind protocols. While the details matter a lot in security
+I tried to hit the right degree when explaining. We will use a slightly modified version of [OAuth 2.0 Authorization Code flow with the PKCE Extension](https://blog.postman.com/pkce-oauth-how-to/).
 
 (Video coming soon)
 

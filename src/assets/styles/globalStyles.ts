@@ -19,11 +19,11 @@ export default createGlobalStyle`
   }
   
   h1 {
-    ${tw`text-lg mt-6 mb-4 font-bold leading-7 sm:text-3xl sm:leading-9 sm:truncate`};
+    ${tw`text-lg mt-12 mb-4 font-bold leading-7 sm:text-3xl sm:leading-9 sm:truncate`};
   }
 
   h2 {
-    ${tw`mt-6 mb-4 font-bold leading-7 sm:text-3xl sm:leading-9 sm:truncate`};
+    ${tw`mt-12 mb-4 font-bold leading-7 sm:text-3xl sm:leading-9 sm:truncate`};
   }
 
   ul {
