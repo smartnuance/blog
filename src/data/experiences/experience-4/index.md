@@ -1,6 +1,6 @@
 ---
 category: 'experiences'
-company: 'freiheit.com Lisbon'
+company: 'freiheit.com technologies gmbh Lisbon'
 position: 'Full stack developer'
 startDate: 'Dec 2017'
 endDate: 'Dec 2020'

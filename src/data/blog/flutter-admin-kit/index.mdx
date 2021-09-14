@@ -19,7 +19,7 @@ View [code on Github](https://github.com/smartnuance/flutter-admin-kit).
 The flutter admin kit combines the fine art of an interactive web frontend with a powerful data abstraction layer. The goal is
 to provide a kit, also called a starter template, that reduces the boring boilerplate necessary to get the basics of authentication and CRUD functionality
 on your models done. At the same time you should be able to use the component based approach of Flutter to create and plug your complex UI elements _wherever you want them_,
-without starting over dealing with list paging/scrolling, URL routes setup, low-level form handling, savepoints when editing, error handling and all that stuff
+without starting over dealing with list paging/scrolling, URL routes setup, low-level form handling, save-points when editing, error handling and all that stuff
 we just expect _from a modern web interface_.
 
 This is achieved by combining state-of-the-art libraries that give strong (and strict) guidelines that will keep the admin interface
@@ -30,7 +30,7 @@ Technically these are the highlights implemented so far:
 
 - Declarative routing via global state, organized with [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
 
-- Model list view dynamically generated from config files and an inspection API
+- Model list view dynamically generated from configuration files and an inspection API
 
 - Authentication with OAuth based on auto-refreshed JWTs
 
@@ -40,7 +40,7 @@ Technically these are the highlights implemented so far:
 
 ## State management
 
-In this video I'm gooing through the list of used packages and explain why they are useful. You can find the up-to-date list in [pubspec.yaml](https://github.com/smartnuance/flutter-admin-kit/blob/main/pubspec.yaml).
+In this video I'm going through the list of used packages and explain why they are useful. You can find the up-to-date list in [pubspec.yaml](https://github.com/smartnuance/flutter-admin-kit/blob/main/pubspec.yaml).
 
 
 Then we look at the most opinionated decision of flutter-admin-kit: how most state is organized globally and interconnected in a composable pattern:
