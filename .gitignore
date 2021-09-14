@@ -67,3 +67,13 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+.run/
+
+# VS Code related
+.vscode/
