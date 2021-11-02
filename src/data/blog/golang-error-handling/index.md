@@ -1,12 +1,12 @@
 ---
 category: 'blog'
-title: Fix Golang's error handling
+title: Fix Go's error handling
 date: '2020-09-03'
-description: Golang's error handling is not (yet) fixed, but my prefered solution is in reach.
-tags: [Golang, Coding]
+description: Go's error handling is not (yet) fixed, but my prefered solution is in reach.
+tags: [Go, Coding]
 ---
 
-Error handling is hard. Golang takes a refreshing approach by making everything
+Error handling is hard. Go takes a refreshing approach by making everything
 _explicit_. Sounds cumbersome, is cumbersome and the one simple but powerful
 error handling concept has to be invented still. Maybe by you, after you read
 this article.
@@ -62,7 +62,7 @@ return (result1, result2)
 	OR (a different error description, some fallback result)
 ```
 
-Golang has multiple return values and the convention is to return an `error` as
+Go has multiple return values and the convention is to return an `error` as
 the _last_ value that describes the error by incorporating more information like
 an error message or an error code into a struct that implements the error
 interface:
@@ -92,7 +92,7 @@ Thus we really don't need exceptions if we accept two facts:
 
 ## Cleaning resources
 
-Golang has a construct, the `defer` statement, that can be used to cleanup.
+Go has a construct, the `defer` statement, that can be used to cleanup.
 
 premises:
 
@@ -121,7 +121,7 @@ func (v *ValidationErrors) Error() string {
 ```
 
 
-Golang sadly does not have a simple way to define a new type from an existing type. It has a
+Go sadly does not have a simple way to define a new type from an existing type. It has a
 [type alias](https://yourbasic.org/golang/type-alias/), but we cannot use that since _"An alias declaration doesn’t create a new distinct type different from the type it’s created from"_.
 
 So we can use the "field inheritance" shorthand to define a new struct that already implements the `error` interface.
