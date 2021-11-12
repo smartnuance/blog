@@ -1,0 +1,37 @@
+---
+category: 'blog'
+type: 'project'
+title: Introducing a kit for transitional services
+cover: './cover.jpg'
+head_cover: './cover.jpg'
+description: This kit helps creating SaaS backends that can transit from a handy single-process app to a distributed service mesh with a few lines of config changes.
+date: '2021-11-12'
+tags: [Go, Microservices, Data Organization]
+published: true
+---
+
+Check out the <a href="https://admin-kit.smartnuance.com" target="_blank">demo</a> backed by an instance of the SaaS kit.
+
+View [code on Github](https://github.com/smartnuance/saas-kit).
+
+## What is the go SaaS kit?
+
+The kit combines the benefits of a streamlined developer experience known from monolithic frameworks with the superior design advantages of [microservices (checkout my separate article)](/blog/microservices).
+
+Technically these are the highlights implemented so far:
+
+- Authentication service with a hierarchical role model for organizing permissions
+
+- Feature service for managing events and workshops
+
+- Tooling to run all services in a single process during development
+
+**Coming soon**
+
+- Continuous delivery support inclusive IaC for [terraform](https://www.terraform.io/) and [kubernetes](https://kubernetes.io/) for orchestrating the individual services
+
+- Integration test setup and examples for inter-service feature tests
+
+## Credits
+Image Source:
+https://unsplash.com/photos/3D1Hjp4_nII
