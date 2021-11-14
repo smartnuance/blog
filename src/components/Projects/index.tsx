@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
 import Link from 'gatsby-link';
 import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
-import { GithubLogo } from "phosphor-react";
 import React from 'react';
 import * as Styled from './styles';
 
@@ -85,9 +84,6 @@ const Projects: React.FC = () => {
                       <Styled.Tag key={item}>{item}</Styled.Tag>
                     ))}
                   </Styled.Tags>
-                  <Styled.Icon>
-                    <GithubLogo  />
-                  </Styled.Icon>
                 </Styled.Card>
               </motion.div>
             </Link>

@@ -38,8 +38,3 @@ export const Tags = styled.div`
 export const Tag = styled.span`
   ${tw`text-xs text-indigo-900 border border-green-200 rounded-full px-2 py-1 mr-2`}
 `;
-
-export const Icon = styled.span`
-  ${tw`absolute bottom-0 right-0  items-center justify-center w-10 h-10 text-indigo-500 mb-2`};
-`;
-
