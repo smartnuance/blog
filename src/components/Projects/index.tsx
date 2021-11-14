@@ -18,6 +18,9 @@ interface Project {
       date: string;
       tags: string[];
       cover: IGatsbyImageData;
+      logo?: {
+        publicURL: string;
+      };
     };
   };
 }
@@ -38,6 +41,9 @@ const Projects: React.FC = () => {
             frontmatter {
               title
               description
+              logo {
+                publicURL
+              }
               date(formatString: "D. MMMM YYYY")
               tags
               cover {
@@ -60,7 +66,7 @@ const Projects: React.FC = () => {
         const {
           id,
           fields: { path },
-          frontmatter: { title, cover, description, date, tags }
+          frontmatter: { title, cover, logo, description, date, tags }
         } = item.node;
 
         const image = getImage(cover);
@@ -75,8 +81,13 @@ const Projects: React.FC = () => {
                     </Styled.Image>
                   )}
                   <Styled.Content>
-                    <Styled.Date>{date}</Styled.Date>
-                    <Styled.Title>{title}</Styled.Title>
+                    <Styled.TitleRow>
+                      <Styled.Titles>
+                        <Styled.Date>{date}</Styled.Date>
+                        <Styled.Title>{title}</Styled.Title>
+                      </Styled.Titles>
+                      {logo && <Styled.Logo src={logo.publicURL} width="40px" />}
+                    </Styled.TitleRow>
                     <Styled.Description>{description}</Styled.Description>
                   </Styled.Content>
                   <Styled.Tags>

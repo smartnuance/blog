@@ -1,3 +1,4 @@
+import { Logo } from 'components/Header/Logo/styles';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 import Container from 'components/ui/Container';
@@ -9,8 +10,6 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
 import * as Styled from './styles';
 
-
-
 interface Post {
   body: string;
   fields: {
@@ -19,6 +18,9 @@ interface Post {
   frontmatter: {
     title: string;
     date: string;
+    logo?: {
+      publicURL: string;
+    };
     cover: IGatsbyImageData;
     cover_og: IGatsbyImageData;
     head_cover: IGatsbyImageData;
@@ -51,7 +53,11 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
             <GatsbyImage image={image} alt={post.frontmatter.title} />
           </Styled.Image>
         )}
-        <TitleSection title={post.frontmatter.date} subtitle={post.frontmatter.title} />
+        <TitleSection
+          title={post.frontmatter.date}
+          subtitle={post.frontmatter.title}
+          logoURL={post.frontmatter.logo?.publicURL}
+        />
         <MDXRenderer>{post.body}</MDXRenderer>
         <Styled.Links>
           <span>
@@ -97,6 +103,9 @@ export const query = graphql`
           childImageSharp {
             gatsbyImageData(width: 800, layout: CONSTRAINED)
           }
+        }
+        logo {
+          publicURL
         }
       }
     }

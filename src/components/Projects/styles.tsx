@@ -21,11 +21,21 @@ export const Image = styled.figure`
   ${tw`w-full`};
 `;
 
-export const Title = styled.h3`
-  ${tw`font-semibold mb-4`};
+export const Titles = styled.div`
+  ${tw`flex flex-col`};
 `;
 
-export const Description = styled.p`${tw`text-sm`}`;
+export const TitleRow = styled.div`
+  ${tw`flex flex-row flex-nowrap justify-between`};
+`;
+
+export const Title = styled.p`
+  ${tw`font-semibold`};
+`;
+
+export const Description = styled.p`${tw`text-sm pt-5`}`;
+
+export const Logo = styled.img`${tw`ml-2`}`;
 
 export const Date = styled.h3`
   ${tw`text-xs text-indigo-500`};
