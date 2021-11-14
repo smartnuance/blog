@@ -2,13 +2,13 @@ import Banner from '../../components/ui/Banner';
 
 I'm a visionary for software engineering and a pragmatist in writing code. I love teaching how I build stuff with the click-clacks of my keyboard because I'm talented in explaining. If a culture of conveying know-how to team mates prevails, even complex software projects will succeed.
 
+<CTA to="/resume/" label="View My Profile" />
+
 export default function HeroBanner(props) {
   return (
     <Banner
       title='Software engineer & Trainer'
       subtitle='I am Simon'
-      linkTo='/resume/'
-      linkText='View My Profile'
     >
       {props.children}
     </Banner>

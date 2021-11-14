@@ -1,23 +1,22 @@
-import { useStaticQuery, graphql } from 'gatsby';
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-
-import Header from 'components/Header';
-import Footer from 'components/Footer';
-import Newsletter from 'components/Newsletter';
-import Link from 'gatsby-link';
-import Container from 'components/ui/Container';
-import SEO from 'components/SEO';
-import TitleSection from 'components/ui/TitleSection';
 import { MDXProvider } from '@mdx-js/react';
-
 import 'assets/styles/global.css';
 import GlobalStyles from 'assets/styles/globalStyles';
-import * as Styled from './styles';
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import SEO from 'components/SEO';
+import Button from 'components/ui/Button';
+import Container from 'components/ui/Container';
+import CTA from 'components/ui/CTA';
 import Quote from 'components/ui/Quote';
+import TitleSection from 'components/ui/TitleSection';
+import { AnimatePresence, motion } from 'framer-motion';
+import { graphql, useStaticQuery } from 'gatsby';
+import Link from 'gatsby-link';
+import React from 'react';
+import * as Styled from './styles';
 
 // common components usable in mdx files without explicit imports
-const shortcodes = { blockquote: Quote, SEO, Container, TitleSection, Link };
+const shortcodes = { blockquote: Quote, SEO, Container, TitleSection, Link, Button, CTA };
 
 interface Props {
   children: React.ReactNode;
