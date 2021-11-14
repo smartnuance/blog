@@ -1,4 +1,5 @@
 import ContactInfo from 'components/ContactInfo';
+import { PaperPlaneTilt, Phone, MapPin } from "phosphor-react";
 
 <SEO title="Contact" />
 <Container section>
@@ -6,11 +7,11 @@ import ContactInfo from 'components/ContactInfo';
 </Container>
 
 <Container>
-<ContactInfo title="Phone" icon="phone">
+<ContactInfo title="Phone" icon={<Phone />}>
 +351 91 298 316 3
 </ContactInfo>
 
-<ContactInfo title="Address" icon="map-marker-alt">
+<ContactInfo title="Address" icon={<MapPin />}>
 
 Rua do Meio à Lapa  23, 3° Esq,
 
@@ -20,7 +21,7 @@ Portugal
 
 </ContactInfo>
 
-<ContactInfo title="Email" icon="paper-plane">
+<ContactInfo title="Email" icon={<PaperPlaneTilt />}>
 
 simon@smartnuance.com
 

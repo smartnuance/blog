@@ -1,6 +1,8 @@
 import HeroBanner from '../data/hero';
 import { Services, Service } from 'components/Services';
 import Projects from 'components/Projects';
+import { BracketsCurly, UsersThree } from "phosphor-react";
+
 
 <SEO title="About" />
 
@@ -23,12 +25,12 @@ Contact me and we can discuss your challenge and how I could be helpful to tackl
 
 <TitleSection title="for companies & startups" subtitle="Count on me" center />
 <Services>
-<Service title="Boost your product" icon="laptop-code">
+<Service title="Boost your product" icon={<BracketsCurly />}>
 
 Hire me as a freelancer for the critical phase of your product. Profit from my profound experience with a [huge number of technologies](/resume). In many corporate and side projects I proofed how I do not only adapt a tech stack quickly but also thrive it forward to be simpler but complete enough to deliver stable software that we all actually want to use.
 
 </Service>
-<Service title="Boost your team" icon="fighter-jet">
+<Service title="Boost your team" icon={<UsersThree />}>
 
 Delivering on my own is easy but limited by my finite time. That's why I prefer collaborations where I work closely with a team and empower them in a few months to do fine without me or having me just as an occasional reviewer or last resort for difficult decisions. I achieve this by coaching team members individually, exemplifying a culture of humble learning and teaching. I never capture knowledge, I share it openly until team members are perfectly ready to take over my lead. I ensure this by
 - helping to find consensus of fundamental tech choices

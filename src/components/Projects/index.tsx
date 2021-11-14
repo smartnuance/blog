@@ -1,9 +1,9 @@
 import Container from 'components/ui/Container';
-import Icon from 'components/ui/Icon';
 import { motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
-import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import Link from 'gatsby-link';
+import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
+import { GithubLogo } from "phosphor-react";
 import React from 'react';
 import * as Styled from './styles';
 
@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
                     ))}
                   </Styled.Tags>
                   <Styled.Icon>
-                    <Icon icon="code-branch" />
+                    <GithubLogo  />
                   </Styled.Icon>
                 </Styled.Card>
               </motion.div>

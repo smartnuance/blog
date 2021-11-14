@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useMemo } from 'react';
-
-import Icon, { IconProps } from 'components/ui/Icon';
+import { CaretDown, CaretUp, IconProps } from 'phosphor-react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useMeasure } from 'react-use';
 import * as Styled from './styles';
 
@@ -22,27 +21,24 @@ const InfoBlock: React.FC<Props> = ({ icon, title, content, center, collapsible 
   const [ref, { height }] = useMeasure<HTMLDivElement>();
 
   // Animations
-  const animatedHeight = useMemo(() => (collapsed ? Styled.defaultContentHeight : contentHeight), [
-    collapsed,
-    contentHeight
-  ]);
+  const animatedHeight = useMemo(
+    () => (collapsed ? Styled.defaultContentHeight : contentHeight),
+    [collapsed, contentHeight]
+  );
 
   useEffect(() => {
     // Sets initial height
     setContentHeight(height);
   }, [height]);
 
-  const currentlyCollapsible = useMemo(() => collapsible && height > Styled.defaultContentHeight, [
-    collapsible,
-    height,
-    contentHeight
-  ]);
+  const currentlyCollapsible = useMemo(
+    () => collapsible && height > Styled.defaultContentHeight,
+    [collapsible, height, contentHeight]
+  );
 
   return (
     <Styled.InfoBlock center={center}>
-      <Styled.Icon>
-        <Icon icon={icon} />
-      </Styled.Icon>
+      <Styled.Icon>{icon}</Styled.Icon>
       <Styled.Wrapper center={center}>
         <Styled.Content animate={currentlyCollapsible ? { height: animatedHeight } : undefined}>
           <div ref={ref}>
@@ -53,7 +49,7 @@ const InfoBlock: React.FC<Props> = ({ icon, title, content, center, collapsible 
         </Styled.Content>
         {currentlyCollapsible && (
           <Styled.CollapseButton center onClick={() => setCollapsed(!collapsed)}>
-            {collapsed ? <Icon icon="chevron-down" /> : <Icon icon="chevron-up" />}
+            {collapsed ? <CaretDown /> : <CaretUp />}
           </Styled.CollapseButton>
         )}
       </Styled.Wrapper>

@@ -1,8 +1,6 @@
-import React from 'react';
-
 import InfoBlock from 'components/ui/InfoBlock';
-import { IconProps } from 'components/ui/Icon';
-
+import { IconProps } from 'phosphor-react';
+import React from 'react';
 import * as Styled from './styles';
 
 interface ServiceProps {
@@ -14,12 +12,7 @@ interface ServiceProps {
 export const Service: React.FC<ServiceProps> = ({ title, icon, children }) => {
   return (
     <Styled.ServiceItem>
-      <InfoBlock
-        icon={icon}
-        title={title}
-        content={children}
-        collapsible={true}
-      />
+      <InfoBlock icon={icon} title={title} content={children} collapsible={true} />
     </Styled.ServiceItem>
   );
 };
@@ -29,9 +22,5 @@ interface ServicesProps {
 }
 
 export const Services: React.FC<ServicesProps> = ({ children }) => {
-  return (
-    <Styled.Services>
-      {children}
-    </Styled.Services>
-  );
+  return <Styled.Services>{children}</Styled.Services>;
 };

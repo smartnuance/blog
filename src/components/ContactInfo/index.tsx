@@ -1,8 +1,6 @@
-import React from 'react';
-
 import InfoBlock from 'components/ui/InfoBlock';
-import { IconProps } from 'components/ui/Icon';
-
+import { IconProps } from 'phosphor-react';
+import React from 'react';
 import * as Styled from './styles';
 
 interface Props {
