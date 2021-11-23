@@ -1,0 +1,43 @@
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+
+autonumber 1 1 "<b>[0]"
+participant "app server\n(CDN)" as cdn
+actor "user\n(browser)" as user #36d39a
+collections "auth service" as auth
+database "auth db" as db
+collections "event service" as event
+
+activate user #36d39a
+user -> cdn ++: <b>GET /
+user <- cdn --: single-page app
+
+|||
+
+== Login with credentials ==
+
+user -> auth ++: <b>POST /login\n(email, password)
+auth -> db : <b>GetProfile().Role
+note over auth : Create tokens:\nsign(short-lived JWT)\nsign(long-lived JWT)
+user <- auth --: (access token, refresh token)
+
+|||
+
+== Fetch Resources ==
+
+user -> event ++ : <b>GET /workshops\nAuthorization:"Bearer <access token>"
+note over event : Validate <access token>
+user <- event --: resource 
+
+|||
+
+group case: token expired
+
+    user ->x event : <b>GET /workshops\nAuthorization:"Bearer <access token>"
+    user -> auth ++ : <b>POST refresh <refresh token>
+    note over auth : Create fresh access token:\nsign(short-lived JWT)
+    user <- auth --: access token
+
+else retry with fresh access token
+end
+@enduml

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1114.5833px" preserveAspectRatio="none" style="width:1042px;height:1114px;background:#00000000;" version="1.1" viewBox="0 0 1042 1114" width="1042.7083px" zoomAndPan="magnify"><defs><linearGradient id="g1qneahfructwl0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#59B6EC"/><stop offset="100%" stop-color="#2FA4E7"/></linearGradient><linearGradient id="g1qneahfructwl1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F8F9FA"/></linearGradient><linearGradient id="g1qneahfructwl2" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#35638F"/><stop offset="100%" stop-color="#033C73"/></linearGradient></defs><g><rect fill="#EDF0F2" height="39.5508" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="89.0625" y="151.9857"/><rect fill="#36D39A" height="876.3346" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="273.4375" y="120.7682"/><rect fill="#EDF0F2" height="154.0039" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="570.3125" y="325.8138"/><rect fill="#EDF0F2" height="99.9023" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="570.3125" y="853.4831"/><rect fill="#EDF0F2" height="85.3516" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="909.8958" y="614.0951"/><line style="stroke:#BABDBF;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="93.75" x2="93.75" y1="110.3516" y2="1006.4779"/><line style="stroke:#BABDBF;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="278.6458" x2="278.6458" y1="110.3516" y2="1006.4779"/><line style="stroke:#BABDBF;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="575" x2="575" y1="110.3516" y2="1006.4779"/><line style="stroke:#BABDBF;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="770.8333" x2="770.8333" y1="110.3516" y2="1006.4779"/><line style="stroke:#BABDBF;stroke-width:2.0833333333333335;stroke-dasharray:5.0,5.0;" x1="914.5833" x2="914.5833" y1="110.3516" y2="1006.4779"/><rect fill="url(#g1qneahfructwl0)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="94.7917" x="46.875" y="55.2083"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="69.7917" x="59.375" y="79.3111">app server</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="37.5" x="75.5208" y="93.8619">(CDN)</text><rect fill="url(#g1qneahfructwl0)" height="54.1016" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="94.7917" x="46.875" y="1005.4362"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="69.7917" x="59.375" y="1029.539">app server</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="37.5" x="75.5208" y="1044.0898">(CDN)</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="29.1667" x="260.9375" y="87.6444">user</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="244.2708" y="102.1952">(browser)</text><ellipse cx="278.6458" cy="15.625" fill="#36D39A" rx="8.3333" ry="8.3333" style="stroke:#2FA4E7;stroke-width:2.0833333333333335;"/><path d="M278.6458,23.9583 L278.6458,52.0833 M265.1042,32.2917 L292.1875,32.2917 M278.6458,52.0833 L265.1042,67.7083 M278.6458,52.0833 L292.1875,67.7083 " fill="none" style="stroke:#2FA4E7;stroke-width:2.0833333333333335;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="29.1667" x="260.9375" y="1022.2473">user</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="62.5" x="244.2708" y="1036.7981">(browser)</text><ellipse cx="278.6458" cy="1055.3711" fill="#36D39A" rx="8.3333" ry="8.3333" style="stroke:#2FA4E7;stroke-width:2.0833333333333335;"/><path d="M278.6458,1063.7044 L278.6458,1091.8294 M265.1042,1072.0378 L292.1875,1072.0378 M278.6458,1091.8294 L265.1042,1107.4544 M278.6458,1091.8294 L292.1875,1107.4544 " fill="none" style="stroke:#2FA4E7;stroke-width:2.0833333333333335;"/><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="105.2083" x="525" y="65.5924"/><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="105.2083" x="520.8333" y="69.7591"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="533.3333" y="93.8619">auth service</text><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="105.2083" x="525" y="1005.4362"/><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="105.2083" x="520.8333" y="1009.6029"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="80.2083" x="533.3333" y="1033.7056">auth service</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="51.0417" x="742.7083" y="102.1952">auth db</text><path d="M752.6042,47.8841 C752.6042,37.4674 771.3542,37.4674 771.3542,37.4674 C771.3542,37.4674 790.1042,37.4674 790.1042,47.8841 L790.1042,74.9674 C790.1042,85.3841 771.3542,85.3841 771.3542,85.3841 C771.3542,85.3841 752.6042,85.3841 752.6042,74.9674 L752.6042,47.8841 " fill="url(#g1qneahfructwl0)" style="stroke:#2FA4E7;stroke-width:1.5625;"/><path d="M752.6042,47.8841 C752.6042,58.3008 771.3542,58.3008 771.3542,58.3008 C771.3542,58.3008 790.1042,58.3008 790.1042,47.8841 " fill="none" style="stroke:#2FA4E7;stroke-width:1.5625;"/><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="51.0417" x="742.7083" y="1022.2473">auth db</text><path d="M752.6042,1040.8203 C752.6042,1030.4036 771.3542,1030.4036 771.3542,1030.4036 C771.3542,1030.4036 790.1042,1030.4036 790.1042,1040.8203 L790.1042,1067.9036 C790.1042,1078.3203 771.3542,1078.3203 771.3542,1078.3203 C771.3542,1078.3203 752.6042,1078.3203 752.6042,1067.9036 L752.6042,1040.8203 " fill="url(#g1qneahfructwl0)" style="stroke:#2FA4E7;stroke-width:1.5625;"/><path d="M752.6042,1040.8203 C752.6042,1051.237 771.3542,1051.237 771.3542,1051.237 C771.3542,1051.237 790.1042,1051.237 790.1042,1040.8203 " fill="none" style="stroke:#2FA4E7;stroke-width:1.5625;"/><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="111.4583" x="861.4583" y="65.5924"/><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="111.4583" x="857.2917" y="69.7591"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="86.4583" x="869.7917" y="93.8619">event service</text><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="111.4583" x="861.4583" y="1005.4362"/><rect fill="url(#g1qneahfructwl0)" height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.5625;" width="111.4583" x="857.2917" y="1009.6029"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="86.4583" x="869.7917" y="1033.7056">event service</text><rect fill="#EDF0F2" height="39.5508" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="89.0625" y="151.9857"/><rect fill="#36D39A" height="876.3346" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="273.4375" y="120.7682"/><rect fill="#EDF0F2" height="154.0039" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="570.3125" y="325.8138"/><rect fill="#EDF0F2" height="99.9023" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="570.3125" y="853.4831"/><rect fill="#EDF0F2" height="85.3516" style="stroke:#BABDBF;stroke-width:1.0416666666666667;" width="10.4167" x="909.8958" y="614.0951"/><polygon fill="#2FA4E7" points="110.9375,147.819,100.5208,151.9857,110.9375,156.1523,106.7708,151.9857" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="104.6875" x2="272.3958" y1="151.9857" y2="151.9857"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="122.3958" y="141.746">[1]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="35.4167" x="155.7292" y="141.746">GET /</text><polygon fill="#2FA4E7" points="260.9375,187.3698,271.3542,191.5365,260.9375,195.7031,265.1042,191.5365" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="94.2708" x2="267.1875" y1="191.5365" y2="191.5365"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="106.7708" y="181.2968">[2]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="105.2083" x="140.1042" y="181.2968">single-page app</text><rect fill="url(#g1qneahfructwl1)" height="3.125" style="stroke:url(#g1qneahfructwl1);stroke-width:1.0416666666666667;" width="1035.4167" x="0" y="251.9368"/><line style="stroke:#868E96;stroke-width:1.0416666666666667;" x1="0" x2="1035.4167" y1="251.9368" y2="251.9368"/><line style="stroke:#868E96;stroke-width:1.0416666666666667;" x1="0" x2="1035.4167" y1="255.0618" y2="255.0618"/><rect fill="url(#g1qneahfructwl1)" height="33.3008" style="stroke:#868E96;stroke-width:2.0833333333333335;" width="193.75" x="420.8333" y="236.3281"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="164.5833" x="432.2917" y="257.3059">Login with credentials</text><polygon fill="#2FA4E7" points="557.8125,321.6471,568.2292,325.8138,557.8125,329.9805,561.9792,325.8138" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="283.8542" x2="564.0625" y1="325.8138" y2="325.8138"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="296.3542" y="308.2987">[3]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="83.3333" x="329.6875" y="301.0234">POST /login</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="115.625" x="329.6875" y="315.5741">(email, password)</text><polygon fill="#2FA4E7" points="758.8542,361.1979,769.2708,365.3646,758.8542,369.5313,763.0208,365.3646" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="580.7292" x2="765.1042" y1="365.3646" y2="365.3646"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="593.2292" y="355.1249">[4]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="121.875" x="626.5625" y="355.1249">GetProfile().Role</text><path d="M493.75,383.0729 L493.75,438.2813 A4.1667,4.1667 0 0 0 497.9167,442.4479 L653.125,442.4479 A4.1667,4.1667 0 0 0 657.2917,438.2813 L657.2917,389.3229 L646.875,378.9063 L497.9167,378.9063 A4.1667,4.1667 0 0 0 493.75,383.0729 " fill="url(#g1qneahfructwl2)" style="stroke:#033C73;stroke-width:1.0416666666666667;"/><path d="M646.875,378.9063 L646.875,387.2396 A2.0833,2.0833 0 0 0 648.9583,389.3229 L657.2917,389.3229 L646.875,378.9063 " fill="url(#g1qneahfructwl2)" style="stroke:#033C73;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="96.875" x="505.2083" y="400.9257">Create tokens:</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="131.25" x="505.2083" y="415.4765">sign(short-lived JWT)</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="125" x="505.2083" y="430.0273">sign(long-lived JWT)</text><polygon fill="#2FA4E7" points="295.3125,475.651,284.8958,479.8177,295.3125,483.9844,291.1458,479.8177" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="289.0625" x2="574.4792" y1="479.8177" y2="479.8177"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="306.7708" y="469.578">[5]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="194.7917" x="340.1042" y="469.578">(access token, refresh token)</text><rect fill="url(#g1qneahfructwl1)" height="3.125" style="stroke:url(#g1qneahfructwl1);stroke-width:1.0416666666666667;" width="1035.4167" x="0" y="540.2181"/><line style="stroke:#868E96;stroke-width:1.0416666666666667;" x1="0" x2="1035.4167" y1="540.2181" y2="540.2181"/><line style="stroke:#868E96;stroke-width:1.0416666666666667;" x1="0" x2="1035.4167" y1="543.3431" y2="543.3431"/><rect fill="url(#g1qneahfructwl1)" height="33.3008" style="stroke:#868E96;stroke-width:2.0833333333333335;" width="151.0417" x="442.1875" y="524.6094"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="121.875" x="453.6458" y="545.5872">Fetch Resources</text><polygon fill="#2FA4E7" points="897.3958,609.9284,907.8125,614.0951,897.3958,618.2617,901.5625,614.0951" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="283.8542" x2="903.6458" y1="614.0951" y2="614.0951"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="296.3542" y="596.58">[6]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="329.6875" y="589.3046">GET /workshops</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="256.25" x="329.6875" y="603.8554">Authorization:"Bearer &lt;access token&gt;"</text><path d="M815.625,631.8034 L815.625,657.8451 A4.1667,4.1667 0 0 0 819.7917,662.0117 L1009.375,662.0117 A4.1667,4.1667 0 0 0 1013.5417,657.8451 L1013.5417,638.0534 L1003.125,627.6367 L819.7917,627.6367 A4.1667,4.1667 0 0 0 815.625,631.8034 " fill="url(#g1qneahfructwl2)" style="stroke:#033C73;stroke-width:1.0416666666666667;"/><path d="M1003.125,627.6367 L1003.125,635.9701 A2.0833,2.0833 0 0 0 1005.2083,638.0534 L1013.5417,638.0534 L1003.125,627.6367 " fill="url(#g1qneahfructwl2)" style="stroke:#033C73;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="165.625" x="827.0833" y="649.6562">Validate &lt;access token&gt;</text><polygon fill="#2FA4E7" points="295.3125,695.2799,284.8958,699.4466,295.3125,703.6133,291.1458,699.4466" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="289.0625" x2="914.0625" y1="699.4466" y2="699.4466"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="306.7708" y="689.2069">[7]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="58.3333" x="340.1042" y="689.2069">resource</text><path d="M232.8125,741.1133 L431.7708,741.1133 L431.7708,756.7383 L421.3542,767.1549 L228.6458,767.1549 L228.6458,745.2799 A4.1667,4.1667 0 0 1 232.8125,741.1133 " fill="#E9ECEF" style="stroke:#868E96;stroke-width:1.0416666666666667;"/><rect fill="none" height="247.6563" rx="4.1667" ry="4.1667" style="stroke:#868E96;stroke-width:2.0833333333333335;" width="796.3542" x="228.6458" y="741.1133"/><text fill="#033C73" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="145.8333" x="249.4792" y="758.9661">case: token expired</text><line style="stroke:#2FA4E7;stroke-width:2.0833333333333335;" x1="896.3542" x2="906.7708" y1="808.724" y2="819.1406"/><line style="stroke:#2FA4E7;stroke-width:2.0833333333333335;" x1="896.3542" x2="906.7708" y1="819.1406" y2="808.724"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="283.8542" x2="901.5625" y1="813.9323" y2="813.9323"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="296.3542" y="796.4172">[8]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="329.6875" y="789.1418">GET /workshops</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="256.25" x="329.6875" y="803.6926">Authorization:"Bearer &lt;access token&gt;"</text><polygon fill="#2FA4E7" points="557.8125,849.3164,568.2292,853.4831,557.8125,857.6497,561.9792,853.4831" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="283.8542" x2="564.0625" y1="853.4831" y2="853.4831"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="296.3542" y="843.2434">[9]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="222.9167" x="329.6875" y="843.2434">POST refresh &lt;refresh token&gt;</text><path d="M470.8333,871.1914 L470.8333,911.8164 A4.1667,4.1667 0 0 0 475,915.9831 L676.0417,915.9831 A4.1667,4.1667 0 0 0 680.2083,911.8164 L680.2083,877.4414 L669.7917,867.0247 L475,867.0247 A4.1667,4.1667 0 0 0 470.8333,871.1914 " fill="url(#g1qneahfructwl2)" style="stroke:#033C73;stroke-width:1.0416666666666667;"/><path d="M669.7917,867.0247 L669.7917,875.3581 A2.0833,2.0833 0 0 0 671.875,877.4414 L680.2083,877.4414 L669.7917,867.0247 " fill="url(#g1qneahfructwl2)" style="stroke:#033C73;stroke-width:1.0416666666666667;"/><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="177.0833" x="482.2917" y="889.0442">Create fresh access token:</text><text fill="#FFFFFF" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="131.25" x="482.2917" y="903.595">sign(short-lived JWT)</text><polygon fill="#2FA4E7" points="295.3125,949.2188,284.8958,953.3854,295.3125,957.5521,291.1458,953.3854" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;"/><line style="stroke:#2FA4E7;stroke-width:3.125;" x1="289.0625" x2="574.4792" y1="953.3854" y2="953.3854"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="27.0833" x="306.7708" y="943.1458">[10]</text><text fill="#343A40" font-family="Verdana" font-size="12.5" lengthAdjust="spacing" textLength="87.5" x="348.4375" y="943.1458">access token</text><line style="stroke:#868E96;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" x1="228.6458" x2="1025" y1="962.7604" y2="962.7604"/><text fill="#343A40" font-family="Verdana" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="227.0833" x="239.0625" y="979.5715">[retry with fresh access token]</text><!--MD5=[7f3fa457d1bb96bf8e508eee0528eab9]
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+
+autonumber 1 1 "<b>[0]"
+participant "app server\n(CDN)" as cdn
+actor "user\n(browser)" as user #36d39a
+collections "auth service" as auth
+database "auth db" as db
+collections "event service" as event
+
+activate user #36d39a
+user -> cdn ++: <b>GET /
+user <- cdn - -: single-page app
+
+|||
+
+== Login with credentials ==
+
+user -> auth ++: <b>POST /login\n(email, password)
+auth -> db : <b>GetProfile().Role
+note over auth : Create tokens:\nsign(short-lived JWT)\nsign(long-lived JWT)
+user <- auth - -: (access token, refresh token)
+
+|||
+
+== Fetch Resources ==
+
+user -> event ++ : <b>GET /workshops\nAuthorization:"Bearer <access token>"
+note over event : Validate <access token>
+user <- event - -: resource 
+
+|||
+
+group case: token expired
+
+    user ->x event : <b>GET /workshops\nAuthorization:"Bearer <access token>"
+    user -> auth ++ : <b>POST refresh <refresh token>
+    note over auth : Create fresh access token:\nsign(short-lived JWT)
+    user <- auth - -: access token
+
+else retry with fresh access token
+end
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName        "Verdana"
+skinparam defaultFontSize        12
+skinparam dpi                    100
+skinparam shadowing              false
+skinparam roundcorner            8
+skinparam ParticipantPadding     40
+skinparam BoxPadding             40
+skinparam Padding                5
+skinparam ArrowColor             #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor #5C862E
+    IBackgroundColor #D2494E
+    IBorderColor #9F161B
+    EBackgroundColor #E47833
+    EBorderColor #B14500
+    NBackgroundColor #35638F
+    NBorderColor #02305C
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #EDF0F2-#E9ECEF
+}
+
+
+skinparam legend {
+	BackgroundColor #E9ECEF
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+skinparam swimlane {
+	BorderColor #033C73
+	BorderThickness 2
+	TitleBackgroundColor  #EDF0F2-#E9ECEF
+	TitleFontColor #2FA4E7
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor #FFF-#EDF0F2
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #343A40
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor transparent
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor transparent
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	DelayFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #EDF0F2
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	GroupBackgroundColor #E9ECEF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #FFF-#F8F9FA
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#F8F9FA
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam interface {
+	BackgroundColor  #D2494E
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor #E47833-#DD5600
+  	BorderColor #DD5600
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #E9ECEF
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #F2FCFE
+	FontColor #2FA4E7
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #F8F9FA
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderColor #2683B9
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam card {
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #033C73
+	FontColor #868E96
+
+}
+
+
+
+autonumber 1 1 "<b>[0]"
+participant "app server\n(CDN)" as cdn
+actor "user\n(browser)" as user #36d39a
+collections "auth service" as auth
+database "auth db" as db
+collections "event service" as event
+
+activate user #36d39a
+user -> cdn ++: <b>GET /
+user <- cdn - -: single-page app
+
+|||
+
+== Login with credentials ==
+
+user -> auth ++: <b>POST /login\n(email, password)
+auth -> db : <b>GetProfile().Role
+note over auth : Create tokens:\nsign(short-lived JWT)\nsign(long-lived JWT)
+user <- auth - -: (access token, refresh token)
+
+|||
+
+== Fetch Resources ==
+
+user -> event ++ : <b>GET /workshops\nAuthorization:"Bearer <access token>"
+note over event : Validate <access token>
+user <- event - -: resource 
+
+|||
+
+group case: token expired
+
+    user ->x event : <b>GET /workshops\nAuthorization:"Bearer <access token>"
+    user -> auth ++ : <b>POST refresh <refresh token>
+    note over auth : Create fresh access token:\nsign(short-lived JWT)
+    user <- auth - -: access token
+
+else retry with fresh access token
+end
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 16:46:50 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

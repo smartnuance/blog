@@ -43,3 +43,14 @@ This is a personal website / blog using [Gatsby](https://www.gatsbyjs.org/), [Ma
     ```
 
     Your production site is now running at `http://localhost:9000`
+
+## Write content
+
+### Diagrams with PlantUML
+
+> docker run -d -p 8050:8080 --name plantuml_server --network host plantuml/plantuml-server:jetty-v1.2021.14
+
+Install [VScode extension](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) and set two settings:
+
+    Plantuml: Render = PlantUMLServer
+    Plantuml: Server = http://localhost:8080
