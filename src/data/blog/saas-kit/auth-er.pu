@@ -1,0 +1,26 @@
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+
+entity Profile {
+  role
+}
+
+entity Instance {
+    name
+}
+entity Token {
+    access
+    expires_at
+}
+entity User {
+    name
+    email
+    password_hash
+}
+entity Instance
+
+Profile "1" *-down- "n" Token: has
+Profile "n" *-right- "1" Instance: belongs to
+Profile "n" *-up- "1" User: has
+
+@enduml

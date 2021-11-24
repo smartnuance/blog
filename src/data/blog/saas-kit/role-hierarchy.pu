@@ -1,0 +1,16 @@
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+
+() "super admin" as a
+() "instance admin" as i
+() "event organizer" as e
+() "teacher" as t
+() "no role" as no
+
+a --> i : inherits by switching >
+i ..> e
+i ..> t : inherits implictly >
+e ..> no
+t ..> no
+
+@enduml
