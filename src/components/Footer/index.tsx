@@ -20,6 +20,9 @@ const Footer: React.FC = () => (
         <Styled.Link href="https://gitlab.com/smartnuance" rel="noreferrer noopener" target="_blank">
           GitLab
         </Styled.Link>
+        <Styled.Link href="https://www.youtube.com/channel/UCOReFydtlEIODZQmwmenQ5g/featured" rel="noreferrer noopener" target="_blank">
+          YouTube
+        </Styled.Link>
         <Styled.Link href="/privacy/" rel="noreferrer noopener">
           Privacy
         </Styled.Link>
