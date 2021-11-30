@@ -1,76 +1,101 @@
 ---
 category: 'blog'
-title: Microservices
+title: Soft factors of microservices
 cover: './cover.jpg'
 head_cover: './cover.jpg'
-description: Why architectures based on microservices are actually a good idea.
+description: Why architectures based on microservices are better for developers.
 date: '2021-11-11'
-tags: [Go, Microservices, Data Organization]
+tags: [Microservices, Data Organization]
 published: true
 ---
 
 Since I started building microservice architectures the first time back in 2018 I felt some _Saudade_[^1] when touching one of my monolithic Django Applications; The simplicity, speed of development and straight-forward tooling was captivating. While you can transform a monolithic application into a microservice mesh, it amounts to gradually rebuilding the monolith. How can these models be so different?
 
-Let's start to define what I understand under a monolith. Many products start as a monolith, maybe based on a framework giving you a good and gentle start by providing basic functionality like authentication, a data access layer like an ORM and probably some request routing and handling utilities. From there, developers add features and tweak the often manifold configuration of an underlying framework.
+Let's start to define what I think defines a monolith. Many products start as a bunch of code run in _a single [runtime system](https://en.wikipedia.org/wiki/Runtime_system)_, executing the business logic. Thus your application is deployable to a virtual server or a single container. Maybe the code's organization is based on a framework giving you a fast and guided start by providing basic functionality like authentication, a data access layer like an ORM and probably some request routing and handling utilities. From there, developers add feature by feature and tweak the often manifold configuration of the underlying framework.
 
-The monolith might be completed with some separate entities like a cache, a message queue for asynchronous processing of background tasks. This monolithic model might carry you far, in fact, even major products out there are still based on such an architecture. It's only that you notice after years into developing and maintaining your product, it costs more time to implement simple features when they introduce more than a view extra fields on a form. You slowly have that fear to question fundamental decisions taken previously, especially how your central data entities are organized. The maintenance cost steadily increase and the promise of rapid innovation that you gave to clients becomes shallow.
+The monolith might be complemented with indeed some units in their own runtime system like a cache, a message queue temporarily storing background tasks that are eventually picked up by a process within the runtime running the business logic. If your system supports multiple customers without spinning up a new instance for each one (multi-tenancy), you might decide to scale your monolith by adding more servers and distribute the requests with a load balancer in front.
 
-By the rigorous decision to introduce some heavy restrictions on how to compose your product when starting of adding building blocks to your system, we can achieve a product of probably longer life-time, but for sure more _consistent cost for changes_.
-Moving towards microservice architectures, the thought process in our coder-cortex also has to shift, and it does not feel extremely sophisticated at first. It becomes more similar to the approach I at least used back at school to build the small programs helping me to get my repetitive homework done.
+This monolithic model might carry you far, in fact, even major products out there are still based on such an architecture. It's only that you notice after years into developing and maintaining your product, that you make a subset of these worrying observations:
+
+- It becomes complex to implement simple features when they have touch-points with data from different domains within your system.
+- You encounter difficulties to make the database perform well at all times, especially when joining large tables or using transactions.
+- You develop fears to revisit your data schema design because migrations get harder to write without breaking business logic.
+- Your maintenance cost steadily increase because tracking down bugs requires engineers knowing all the inter-winded parts of the system.
+- You don't feel comfortable deploying a new version of the monolith because starting it up, warming caches tends to fail more often.
+
+While still mostly up and functional, that promise of rapid innovation that you gave to your clients becomes shallow.
+
+## Why microservices
+
+By the rigorous decision to introduce some heavy restrictions on how to compose your product when starting off adding building blocks to your system, we can achieve a product of probably longer life-time, but for sure more _consistent cost for changes_.
+Moving towards microservice architectures, the thought process in our coder-cortex also has to shift, and it does not feel extremely sophisticated at first. It becomes more similar to the approach I used back at school to build the small programs helping me to get my repetitive homework done.
 
 Facing requirements for a new feature to add some functionality to your system, the central question shifts from
 
 > Where do I add this feature in my code?
 
-> How do I devide the feature into _independent_ parts?
+> How do I divide the feature into _independent_ parts?
 
 This main question you will continuously reconsider during refining features at the requirements level and during development. While we strive for _independent_ parts of logic and data units, I admit that for every useful product, _independent_ is idealistic. It's rather _as independent as possible_ while not compromising the user's experience too much.
 
-However, if you can't outline the functionality of a new service or after your change to an existing service from the top of your head, it's probably not the right division of the problem. And more so, the boundary (a.k.a. interface) of each _component_ in that division should be able to be explained to a workmate standing at the coffee machine, otherwise the interaction is probably too sophisticated.
+However, if you can't outline the functionality of a new service or after your change to an existing service from the top of your head, it's probably not the right division of the problem. And more so, the boundary (a.k.a. interface) of each _component_ in that division should be able to be explained to a workmate standing at the coffee machine, otherwise the interaction is probably too sophisticated. The simplicity of those service interfaces can be estimated by their size; smaller is simpler. That's why the interface per service, including returned errors, should be kept as small as possible.
 
 
-# Factors of resilience
+## Factors of resilience
 
 Code is never bug-free (the exception are programs proofed to be correct by model checking, maybe running on satellites that can't be updated once shot into space). So resilience can't be based on the absence of erroneous code and more drastically, even a noble 100% test coverage will not guarantee that (just lookup the difference of branch coverage VS line coverage if you are doubtful).
 
-I like to see a software system's evolution as a step function. Usually, the function increases the software's value for users by every deployment. At the same time, every deployment comes with a more or less random risk of decreasing the value for certain or all users, depending on the feature set they use and the impact a feature degradation has. Within this model, "is a system resilient to newly added code with bugs" is a question of how well the system operates despite the bugs and how quickly the system can be set back to a state where the system was _good enough_ for its users. Yes, I'm talking about rollbacks.
+I like to see a software system's evolution as a step function:
 
-## Power of statelessness
+![Business value step function](step-function.svg)
 
-We often want services to be _stateless_, but that complicates their design. The _stateless_ requirement does not only mean that there is no need for a persistence layer within that service, it's a much harder requirement: the inter-service logic is not compromised when your service is going down at any time! With that, we are approaching the main benefit I denote to the architectural model of microservices: The increased resilience by the separation of
+Usually, the function increases the software's value for users by every deployment. At the same time, every deployment comes with a more or less random risk of decreasing the value for certain or all users, depending on the feature set they use and the impact a feature degradation has. Within this model, "is a system resilient to newly added code with bugs" is a question of how well the system operates despite the bugs and how quickly the system can be set back to a state where the system was _good enough_ for its users. Yes, I'm talking about rollbacks.
 
-- the units whose behavior is affected by a deployed code change,
+### Power of statelessness
+
+We often want services realising the business logic to be _stateless_. The _stateless_ requirement does not only mean that there is no need for a persistence layer within that service, it's a much harder requirement: the inter-service logic is not compromised when your service is going down at any time! With that, we are approaching the main benefit I denote to the architectural model of microservices: The increased resilience by the separation of
+
+- the units whose behaviour is affected by a deployed code change,
 
 - the units or connections where a potential bottleneck leads to slow-downs or failures.
 
 
-**What about my stateful database?**
+### What about my stateful database?
 
-The second point is easy to compromise with the stateful parts of your system, like the databases. Databases have often the biggest impact when going down or being slow. You can protect the clients to some degree by caching responses and queuing requests. But after all, the database is where data pieces get connected into meaningful alliances, so functionality soon gets compromised when a database is unavailable.
+While stateless services are easy to scale and to reason about, most useful applications deal with some kind of state, somewhere. "The state lives in some type of database that is scaled by my favourite cloud provider", you might think. Sadly, even when your one big database system scales to a certain point performance-wise, it becomes your "complexity-bottleneck" because it is just too easy to couple every data point with each other. More so, it is seen as proper design to organize the database schema in [_Third Normal Form_](https://www.tutorialspoint.com/sql/third-normal-form.htm). If you are databases indeed becomes a performance bottleneck, you can protect the clients to some degree by caching responses and queuing non-urgent updates. But after all, this just postpones the problem to the next round of implementing new features.
 
-Databases are also critical when seeking the holy grail of zero downtime deployments. Hopefully you are using a database that supports transactional schema migrations (in case it has a schema). But even with that, we might introduce an unforeseen problem with a schema change.
+Databases are also critical when seeking the holy grail of zero downtime deployments. Hopefully you are using a database that supports transactional schema migrations (in case it has a schema). But even with that, we might introduce an unforeseen problem in the business logic with a schema change. Then you are either fast in fixing the logic or you will rollback the schema change, potentially loosing new data points created in the meanwhile.
 
-## The need for hands-free rollbacks
+### The need for hands-free rollbacks
 
 With the certainty that bugs (and changes shifting the bottlenecks) while be introduced, we should be concerned about mitigating the negative effects. Some of these changes are too severe to keep in the system until they are fixed, with which we reach the conclusion that every change to the system must be revertible. This includes changes to data schemas and infrastructural changes. This is why, in an idealistic setup, every change to a system should be put into code and under version control.
 
 While teams are now aware of _backwards schema migrations_ for their schema-full databases, infrastructure is usually still setup and modified with manual intervention, even with infrastructure-as-code tools like [terraform](https://www.terraform.io/). Because it's hard to make every change reversible when it comes to stateful products like databases. It's still worth considering being rigorous about reversibility to achieve **fully hands-free continuous delivery**.
 
 
-# The scalability argument
+## The scalability argument
 
-Many blogs claim microservices are about achieving horizontal scalability; simply adding more copies[^2] of a service should make it handle more load, as opposed to vertical scaling of monoliths where you will hit certain limits that are impossible or very costly to surpass. I propose that should not be the reason to start the transformation towards microservices.
+Many blogs claim microservices are popular because they achieve horizontal scalability; simply adding more copies[^2] of a service should make it handle more load, as opposed to vertical scaling of monoliths where you will hit certain limits that are impossible or very costly to surpass.
 
-Having this straight-forward horizontal scalability depends much more on how you split your data and corresponding business logic. In a microservice architecture, bottlenecks will still occur (and it might just end up to be that external API you are not controlling). Simply scaling the stateless services will maybe just move the bottleneck somewhere else in the service mesh.
-So whatever architecture, you will need careful monitoring to understand which parts are potential bottlenecks and what's their impact on the user's experience. One identified, usually it can be improved by making synchronous calls asynchronous or eliminating a dependency completely.
+I believe that does not capture the main advantage of microservices.
+By using an external database you are already separating the logical layer from your data on an infrastructural level. So the logic in a monolithic architecture can be scaled horizontally. But your database is still accessed from increasing number of code points, transactions might interfere more often when adding features. The crux to achieve straight-forward horizontal scalability for your data layer as well is _to split your data along with the corresponding business logic_.
+
+Don't be fooled: In a microservice architecture bottlenecks will still occur (and it might just end up to be that external API you are not controlling). Simply setting the services to auto-scaling will just move the bottleneck somewhere else in the service mesh.
+So whatever architecture, you will need careful monitoring to understand which parts are potential bottlenecks and what's their impact on the user's experience. Once identified, you can react and apply a granular change thanks to the microservice architecture:
+
+- don't change anything because the bottleneck does not hurt the user's experience
+- eliminate a dependency's effect on your performance:
+  - remove dependency ("do it yourself")
+  - **for reading from dependency:** use caching and smartly detect/hide stale data from user
+  - **for writing to dependencies:** execute update asynchronously or regularly synchronise data from dependency and replicate logic in microservices (often cumbersome!)
+- make the client not wait on a response of a slow API call by making **the entire call asynchronous**, returning an ID to later request the status
+
+## Conclusion
+
+I locate the underestimated "soft-benefit" of microservices in the improved scalability of development. Smaller teams with less coordination can take ownership of a set of services and negotiate their concise interfaces with its clients (both other developers and users). On the flip side, it can get more complicated to ensure the inter-service logic implements exactly the behaviour that best for the user experience. You can learn more about how we can keep control about getting this logic right and how we can write expressive but fast test in development in the article about [Introducing a kit for transitional services](/blog/saas-kit). 
 
 
-## Scalability of development
-
-Where I see a benefit of microservices is in the scalability of development. Smaller teams with less coordination can take ownership of a set of services and negotiate their contract with clients and service providers they depend on. On the flip side, it can get more complicated is to ensure the inter-service logic implements the feature that actually adds value to users. We will see how we can keep control about getting this logic right and how we can easier test in development and CI/CD-pipelines by using [transitional architectures](/blog/saas-kit). 
-
-
-## Credits 
+### Credits 
 Image Source:
 https://unsplash.com/photos/qjX0QBtDXto
 
