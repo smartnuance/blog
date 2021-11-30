@@ -16,11 +16,11 @@ export const TitleSection = styled.div`
 `;
 
 export const Title = styled.h2<StyledProps>`
-  ${tw`uppercase mb-4 text-lg font-bold w-full text-left mt-0`};
+  ${tw`uppercase mb-4 font-bold w-full text-left mt-0`};
   ${({ center }) => center && tw`text-center`};
 `;
 
-export const SubTitle = styled.h4<StyledProps>`
+export const SubTitle = styled.p<StyledProps>`
   ${tw`text-xs text-indigo-600 w-full text-left`};
   ${({ center }) => center && tw`text-center`};
 `;
