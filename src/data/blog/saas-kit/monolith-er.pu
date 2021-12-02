@@ -1,0 +1,37 @@
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
+skinparam class {
+    ArrowColor #36d39a
+    ArrowThickness 2
+}
+
+together {
+    entity Session {
+        id
+    }
+    package "Role-based access control (RBAC)" <<Rectangle>>  {
+    entity User {
+        name
+        email
+        passwordHash
+    }
+    entity Role
+    entity Permission
+    }
+}
+entity Event {
+    name
+}
+entity Workshop {
+    title
+    location
+}
+
+Event ||-left-o{ Workshop: part of
+User }o-down--o{ Workshop: subscribes to
+Session |o-up-|| User: has
+User }o-right-o{ Role: has
+Role }o-right-|{  Permission: gives
+
+@enduml

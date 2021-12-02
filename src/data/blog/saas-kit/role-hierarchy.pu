@@ -1,5 +1,6 @@
 @startuml
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
 
 () "super admin" as a
 () "instance admin" as i

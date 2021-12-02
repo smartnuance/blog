@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="67.7083px" preserveAspectRatio="none" style="width:422px;height:67px;background:#00000000;" version="1.1" viewBox="0 0 422 67" width="422.9167px" zoomAndPan="magnify"><defs><linearGradient id="gc6pbsr3q7sxk0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#59B6EC"/><stop offset="100%" stop-color="#2FA4E7"/></linearGradient><linearGradient id="gc6pbsr3q7sxk1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2FA4E7"/><stop offset="100%" stop-color="#2683B9"/></linearGradient></defs><g><!--MD5=[a3638c1e5b65d287ecad7f06f5c0f212]
+class Role--><rect codeLine="8" fill="url(#gc6pbsr3q7sxk0)" height="52.0508" id="Role" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="69.7917" x="152.0833" y="9.375"/><rect fill="url(#gc6pbsr3q7sxk1)" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:url(#gc6pbsr3q7sxk1);stroke-width:1.0416666666666667;" width="69.7917" x="152.0833" y="9.375"/><rect fill="url(#gc6pbsr3q7sxk1)" height="4.1667" style="stroke:url(#gc6pbsr3q7sxk1);stroke-width:1.0416666666666667;" width="69.7917" x="152.0833" y="40.5924"/><rect codeLine="8" fill="none" height="52.0508" id="Role" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="69.7917" x="152.0833" y="9.375"/><ellipse cx="166.6667" cy="27.0671" fill="#EDF0F2" rx="10.4167" ry="10.4167" style="stroke:#BABDBF;stroke-width:1.0416666666666667;"/><path d="M169.2057,31.7546 L163.5254,31.7546 L163.5254,22.64 L169.2057,22.64 L169.2057,24.235 L165.332,24.235 L165.332,26.1882 L168.8314,26.1882 L168.8314,27.7832 L165.332,27.7832 L165.332,30.1595 L169.2057,30.1595 L169.2057,31.7546 Z " fill="#000000"/><text fill="#FFFFFF" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="28.125" x="185.4167" y="31.3944">Role</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="153.125" x2="220.8333" y1="44.7591" y2="44.7591"/><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="153.125" x2="220.8333" y1="53.0924" y2="53.0924"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="9" fill="url(#gc6pbsr3q7sxk0)" height="52.0508" id="User" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="71.875" x="7.2917" y="9.375"/><rect fill="url(#gc6pbsr3q7sxk1)" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:url(#gc6pbsr3q7sxk1);stroke-width:1.0416666666666667;" width="71.875" x="7.2917" y="9.375"/><rect fill="url(#gc6pbsr3q7sxk1)" height="4.1667" style="stroke:url(#gc6pbsr3q7sxk1);stroke-width:1.0416666666666667;" width="71.875" x="7.2917" y="40.5924"/><rect codeLine="9" fill="none" height="52.0508" id="User" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="71.875" x="7.2917" y="9.375"/><ellipse cx="21.875" cy="27.0671" fill="#EDF0F2" rx="10.4167" ry="10.4167" style="stroke:#BABDBF;stroke-width:1.0416666666666667;"/><path d="M24.4141,31.7546 L18.7337,31.7546 L18.7337,22.64 L24.4141,22.64 L24.4141,24.235 L20.5404,24.235 L20.5404,26.1882 L24.0397,26.1882 L24.0397,27.7832 L20.5404,27.7832 L20.5404,30.1595 L24.4141,30.1595 L24.4141,31.7546 Z " fill="#000000"/><text fill="#FFFFFF" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="40.625" y="31.3944">User</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="8.3333" x2="78.125" y1="44.7591" y2="44.7591"/><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="8.3333" x2="78.125" y1="53.0924" y2="53.0924"/><!--MD5=[03da7ad6344b0b2c818a169ad3cc63fd]
+class Permission--><rect codeLine="10" fill="url(#gc6pbsr3q7sxk0)" height="52.0508" id="Permission" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="112.5" x="303.6458" y="9.375"/><rect fill="url(#gc6pbsr3q7sxk1)" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:url(#gc6pbsr3q7sxk1);stroke-width:1.0416666666666667;" width="112.5" x="303.6458" y="9.375"/><rect fill="url(#gc6pbsr3q7sxk1)" height="4.1667" style="stroke:url(#gc6pbsr3q7sxk1);stroke-width:1.0416666666666667;" width="112.5" x="303.6458" y="40.5924"/><rect codeLine="10" fill="none" height="52.0508" id="Permission" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="112.5" x="303.6458" y="9.375"/><ellipse cx="318.2292" cy="27.0671" fill="#EDF0F2" rx="10.4167" ry="10.4167" style="stroke:#BABDBF;stroke-width:1.0416666666666667;"/><path d="M320.7682,31.7546 L315.0879,31.7546 L315.0879,22.64 L320.7682,22.64 L320.7682,24.235 L316.8945,24.235 L316.8945,26.1882 L320.3939,26.1882 L320.3939,27.7832 L316.8945,27.7832 L316.8945,30.1595 L320.7682,30.1595 L320.7682,31.7546 Z " fill="#000000"/><text fill="#FFFFFF" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="70.8333" x="336.9792" y="31.3944">Permission</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="304.6875" x2="415.1042" y1="44.7591" y2="44.7591"/><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="304.6875" x2="415.1042" y1="53.0924" y2="53.0924"/><!--MD5=[70c37dc9bfbc8656942103c36f1181e4]
+link User to Role--><path codeLine="12" d="M88.0625,35.4167 C105.6875,35.4167 125.8438,35.4167 143.3542,35.4167 " fill="none" id="User-Role" style="stroke:#36D39A;stroke-width:2.0833333333333335;"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="143.375" x2="151.7083" y1="35.4167" y2="29.1667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="143.375" x2="151.7083" y1="35.4167" y2="41.6667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="143.375" x2="151.7083" y1="35.4167" y2="35.4167"/><ellipse cx="137.125" cy="35.4167" rx="4.1667" ry="4.1667" style="stroke:#36D39A;stroke-width:2.0833333333333335;fill:none;"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;fill:none;" x1="87.8333" x2="79.5" y1="35.4167" y2="41.6667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;fill:none;" x1="87.8333" x2="79.5" y1="35.4167" y2="29.1667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;fill:none;" x1="87.8333" x2="79.5" y1="35.4167" y2="35.4167"/><ellipse cx="94.0833" cy="35.4167" rx="4.1667" ry="4.1667" style="stroke:#36D39A;stroke-width:2.0833333333333335;fill:none;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="23.9583" x="103.6458" y="24.1028">has</text><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="8.3333" x="130.2141" y="54.4543">n</text><!--MD5=[1be95c84710ac8c74ee34eae5b43f28e]
+link Role to Permission--><path codeLine="13" d="M230.5,35.4167 C250.0417,35.4167 273.5,35.4167 295.0417,35.4167 " fill="none" id="Role-Permission" style="stroke:#36D39A;stroke-width:2.0833333333333335;"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="295.1771" x2="303.5104" y1="35.4167" y2="29.1667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="295.1771" x2="303.5104" y1="35.4167" y2="41.6667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="295.1771" x2="303.5104" y1="35.4167" y2="35.4167"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="293.0938" x2="293.0938" y1="31.25" y2="39.5833"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="230.3021" x2="221.9688" y1="35.4167" y2="41.6667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="230.3021" x2="221.9688" y1="35.4167" y2="29.1667"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="230.3021" x2="221.9688" y1="35.4167" y2="35.4167"/><ellipse cx="236.5521" cy="35.4167" rx="4.1667" ry="4.1667" style="stroke:#36D39A;stroke-width:2.0833333333333335;fill:none;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="33.3333" x="246.0938" y="24.1028">gives</text><!--MD5=[4d1c82c6c7d05ee6e14fa6dae9504962]
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
+skinparam class {
+    ArrowColor #36d39a
+    ArrowThickness 2
+}
+
+entity Role
+entity User
+entity Permission
+
+User }o-right-o{ "n" Role: has
+Role }o-right-|{  Permission: gives
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName        "Verdana"
+skinparam defaultFontSize        12
+skinparam dpi                    100
+skinparam shadowing              false
+skinparam roundcorner            8
+skinparam ParticipantPadding     40
+skinparam BoxPadding             40
+skinparam Padding                5
+skinparam ArrowColor             #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor #5C862E
+    IBackgroundColor #D2494E
+    IBorderColor #9F161B
+    EBackgroundColor #E47833
+    EBorderColor #B14500
+    NBackgroundColor #35638F
+    NBorderColor #02305C
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #EDF0F2-#E9ECEF
+}
+
+
+skinparam legend {
+	BackgroundColor #E9ECEF
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+skinparam swimlane {
+	BorderColor #033C73
+	BorderThickness 2
+	TitleBackgroundColor  #EDF0F2-#E9ECEF
+	TitleFontColor #2FA4E7
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor #FFF-#EDF0F2
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #343A40
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor transparent
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor transparent
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	DelayFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #EDF0F2
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	GroupBackgroundColor #E9ECEF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #FFF-#F8F9FA
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#F8F9FA
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam interface {
+	BackgroundColor  #D2494E
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor #E47833-#DD5600
+  	BorderColor #DD5600
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #E9ECEF
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #F2FCFE
+	FontColor #2FA4E7
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #F8F9FA
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderColor #2683B9
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam card {
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #033C73
+	FontColor #868E96
+
+}
+
+
+skinparam DefaultFontName DejaVu Sans
+skinparam class {
+    ArrowColor #36d39a
+    ArrowThickness 2
+}
+
+entity Role
+entity User
+entity Permission
+
+User }o-right-o{ "n" Role: has
+Role }o-right-|{  Permission: gives
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 16:46:50 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

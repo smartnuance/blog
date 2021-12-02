@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="522.9167px" preserveAspectRatio="none" style="width:300px;height:522px;background:#00000000;" version="1.1" viewBox="0 0 300 522" width="300px" zoomAndPan="magnify"><defs/><g><!--MD5=[f83ae91a690dfc657e1c5fbbd818f13d]
+entity a--><ellipse cx="125.5208" cy="14.5833" fill="#D2494E" rx="8.3333" ry="8.3333" style="stroke:#C71C22;stroke-width:1.5625;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="81.25" x="84.8958" y="49.1028">super admin</text><!--MD5=[c807758c2e9e0d1754c3d4b69a0f6713]
+entity i--><ellipse cx="125.5208" cy="178.125" fill="#D2494E" rx="8.3333" ry="8.3333" style="stroke:#C71C22;stroke-width:1.5625;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="100" x="75.5208" y="212.6444">instance admin</text><!--MD5=[e32773a0da76c445e84e5885468a4484]
+entity e--><ellipse cx="56.7708" cy="341.6667" fill="#D2494E" rx="8.3333" ry="8.3333" style="stroke:#C71C22;stroke-width:1.5625;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="101.0417" x="6.25" y="376.1861">event organizer</text><!--MD5=[4b52362e67c82d91eba5cb75921775cc]
+entity t--><ellipse cx="195.3125" cy="341.6667" fill="#D2494E" rx="8.3333" ry="8.3333" style="stroke:#C71C22;stroke-width:1.5625;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="51.0417" x="169.7917" y="376.1861">teacher</text><!--MD5=[f81ed47a38ff2926b48ea117bf4bd362]
+entity no--><ellipse cx="125.5208" cy="480.2083" fill="#D2494E" rx="8.3333" ry="8.3333" style="stroke:#C71C22;stroke-width:1.5625;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="45.8333" x="102.6042" y="514.7278">no role</text><!--MD5=[1200779b00cc48307fef372fbc345187]
+link a to i--><path codeLine="10" d="M125.5208,24.3021 C125.5208,50.8229 125.5208,130.9063 125.5208,163.2813 " fill="none" id="a-to-i" style="stroke:#2FA4E7;stroke-width:3.125;"/><polygon fill="#2FA4E7" points="125.5208,168.75,129.6875,159.375,125.5208,163.5417,121.3542,159.375,125.5208,168.75" style="stroke:#2FA4E7;stroke-width:3.125;"/><polygon fill="#343A40" points="129.6875,101.0254,132.1366,93.4878,127.2384,93.4878,129.6875,101.0254" style="stroke:#343A40;stroke-width:1.0416666666666667;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="132.2917" x="144.2708" y="101.1861">inherits by switching</text><!--MD5=[7f760a1bbcc56a902422c877d98d6df7]
+link i to e--><path codeLine="11" d="M121.8229,187.8438 C110.4896,214.4688 76.1458,295.1146 62.4792,327.2292 " fill="none" id="i-to-e" style="stroke:#2FA4E7;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><polygon fill="#2FA4E7" points="60.3229,332.2917,67.8273,325.2963,62.362,327.4991,60.1592,322.0337,60.3229,332.2917" style="stroke:#2FA4E7;stroke-width:3.125;"/><!--MD5=[338740b087fa632f3a3dab2029527070]
+link i to t--><path codeLine="12" d="M129.2708,187.8438 C140.7813,214.4688 175.6458,295.1146 189.5208,327.2292 " fill="none" id="i-to-t" style="stroke:#2FA4E7;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><polygon fill="#2FA4E7" points="191.7083,332.2917,191.8335,322.0332,189.6513,327.5068,184.1777,325.3245,191.7083,332.2917" style="stroke:#2FA4E7;stroke-width:3.125;"/><polygon fill="#343A40" points="169.8824,264.225,169.1398,256.3344,164.6436,258.2779,169.8824,264.225" style="stroke:#343A40;stroke-width:1.0416666666666667;"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="104.1667" x="182.8125" y="264.7278">inherits implictly</text><!--MD5=[86ae1619786adad3f95e17b418eed514]
+link e to no--><path codeLine="13" d="M61.0729,351.2396 C72.6979,374.3125 104.8021,438.0417 118.8229,465.875 " fill="none" id="e-to-no" style="stroke:#2FA4E7;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><polygon fill="#2FA4E7" points="121.2188,470.6354,120.7398,460.3874,118.8836,465.9799,113.291,464.1237,121.2188,470.6354" style="stroke:#2FA4E7;stroke-width:3.125;"/><!--MD5=[3bb6c3cc680727009fae551b7ca4c4d5]
+link t to no--><path codeLine="14" d="M190.9479,351.2396 C179.1458,374.3125 146.5521,438.0417 132.3229,465.875 " fill="none" id="t-to-no" style="stroke:#2FA4E7;stroke-width:3.125;stroke-dasharray:7.0,7.0;"/><polygon fill="#2FA4E7" points="129.8854,470.6354,137.863,464.1848,132.2563,465.998,130.4431,460.3914,129.8854,470.6354" style="stroke:#2FA4E7;stroke-width:3.125;"/><!--MD5=[57cdefada78f3619a28eaf886666f4c5]
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
+
+() "super admin" as a
+() "instance admin" as i
+() "event organizer" as e
+() "teacher" as t
+() "no role" as no
+
+a - -> i : inherits by switching >
+i ..> e
+i ..> t : inherits implictly >
+e ..> no
+t ..> no
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName        "Verdana"
+skinparam defaultFontSize        12
+skinparam dpi                    100
+skinparam shadowing              false
+skinparam roundcorner            8
+skinparam ParticipantPadding     40
+skinparam BoxPadding             40
+skinparam Padding                5
+skinparam ArrowColor             #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor #5C862E
+    IBackgroundColor #D2494E
+    IBorderColor #9F161B
+    EBackgroundColor #E47833
+    EBorderColor #B14500
+    NBackgroundColor #35638F
+    NBorderColor #02305C
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #EDF0F2-#E9ECEF
+}
+
+
+skinparam legend {
+	BackgroundColor #E9ECEF
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+skinparam swimlane {
+	BorderColor #033C73
+	BorderThickness 2
+	TitleBackgroundColor  #EDF0F2-#E9ECEF
+	TitleFontColor #2FA4E7
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor #FFF-#EDF0F2
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #343A40
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor transparent
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor transparent
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	DelayFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #EDF0F2
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	GroupBackgroundColor #E9ECEF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #FFF-#F8F9FA
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#F8F9FA
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam interface {
+	BackgroundColor  #D2494E
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor #E47833-#DD5600
+  	BorderColor #DD5600
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #E9ECEF
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #F2FCFE
+	FontColor #2FA4E7
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #F8F9FA
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderColor #2683B9
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam card {
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #033C73
+	FontColor #868E96
+
+}
+
+
+skinparam DefaultFontName DejaVu Sans
+
+() "super admin" as a
+() "instance admin" as i
+() "event organizer" as e
+() "teacher" as t
+() "no role" as no
+
+a - -> i : inherits by switching >
+i ..> e
+i ..> t : inherits implictly >
+e ..> no
+t ..> no
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 16:46:50 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

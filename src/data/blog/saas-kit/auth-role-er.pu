@@ -6,29 +6,27 @@ skinparam class {
     ArrowThickness 2
 }
 
+entity Role {
+    name
+}
 entity Instance {
     name
 }
-entity Token {
-    refreshToken
-    expires_at
-}
 together {
-    entity User {
+    entity User #LightGray {
         name
         email
-        passwordHash
+        password_hash
     }
-    entity Profile {
-        role
-    }
+    entity Profile
 }
 entity Instance
 
-User ||-down-o{ Profile: has
-Profile ||-down-o{ Token: has
+User ||-[#LightGray]down-o{ Profile: has
 Profile }-right-|| Instance: belongs to
+Profile }-down-|| Role: has
+Role }.-down-o| Role: inherits
 
-User }.o{ Instance: operates
+User }.[#LightGray].o{ Instance: operates
 
 @enduml

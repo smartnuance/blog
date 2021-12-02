@@ -9,12 +9,8 @@ skinparam class {
 entity Instance {
     name
 }
-entity Token {
-    refreshToken
-    expires_at
-}
 together {
-    entity User {
+    entity User #LightGray {
         name
         email
         passwordHash
@@ -25,10 +21,9 @@ together {
 }
 entity Instance
 
-User ||-down-o{ Profile: has
-Profile ||-down-o{ Token: has
+User ||-[#LightGray]down-o{ Profile: has
 Profile }-right-|| Instance: belongs to
 
-User }.o{ Instance: operates
+User }.[#LightGray].o{ Instance: operates
 
 @enduml

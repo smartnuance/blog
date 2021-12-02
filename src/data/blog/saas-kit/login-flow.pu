@@ -1,13 +1,14 @@
 @startuml
 !include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
 
-autonumber 1 1 "<b>[0]"
 participant "app server\n(CDN)" as cdn
 actor "user\n(browser)" as user #36d39a
 collections "auth service" as auth
 database "auth db" as db
 collections "event service" as event
 
+autonumber 1 1 "<b>[A0]"
 activate user #36d39a
 user -> cdn ++: <b>GET /
 user <- cdn --: single-page app
@@ -16,28 +17,32 @@ user <- cdn --: single-page app
 
 == Login with credentials ==
 
-user -> auth ++: <b>POST /login\n(email, password)
-auth -> db : <b>GetProfile().Role
-note over auth : Create tokens:\nsign(short-lived JWT)\nsign(long-lived JWT)
-user <- auth --: (access token, refresh token)
+autonumber 1 1 "<b>[B0]"
+user -> auth ++: <b>POST /login\n""(email, password)""
+auth -> db : ""<b>GetProfile().Role""
+auth <- db : profile data with ""role""
+note over auth : Create tokens (JWTs with ""<role>"" in payload):\nshort-lived ""accessToken""\nlong-lived ""refreshToken""
+auth -> db : <b>""Store(refreshToken)""
+user <- auth --: ""(accessToken, refreshToken)""
 
 |||
 
 == Fetch Resources ==
 
-user -> event ++ : <b>GET /workshops\nAuthorization:"Bearer <access token>"
-note over event : Validate <access token>
-user <- event --: resource 
+autonumber 1 1 "<b>[C0]"
+user -> event ++ : <b>GET /workshops\n""Authorization:"Bearer <accessToken>"""
+note over event : Validate ""<accessToken>""
+user <- event --: ""workshops"" 
 
 |||
 
 group case: token expired
 
-    user ->x event : <b>GET /workshops\nAuthorization:"Bearer <access token>"
-    user -> auth ++ : <b>POST refresh <refresh token>
-    note over auth : Create fresh access token:\nsign(short-lived JWT)
-    user <- auth --: access token
+    user ->x event : <b>GET /workshops\n""Authorization:"Bearer <accessToken>"""
+    user -> auth ++ : <b>POST refresh ""<refreshToken>""
+    note over auth : Create fresh, short-lived ""accessToken""
+    user <- auth --: ""accessToken""
 
-else retry with fresh access token
+else retry with fresh ""accessToken""
 end
 @enduml

@@ -1,0 +1,16 @@
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
+skinparam class {
+    ArrowColor #36d39a
+    ArrowThickness 2
+}
+
+entity Role
+entity User
+entity Permission
+
+User }o-right-o{ Role: has
+Role }o-right-|{ Permission: gives
+
+@enduml

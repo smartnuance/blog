@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="301.0417px" preserveAspectRatio="none" style="width:319px;height:301px;background:#00000000;" version="1.1" viewBox="0 0 319 301" width="319.7917px" zoomAndPan="magnify"><defs><linearGradient id="g1xsjikx2ob02n0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#59B6EC"/><stop offset="100%" stop-color="#2FA4E7"/></linearGradient><linearGradient id="g1xsjikx2ob02n1" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#2FA4E7"/><stop offset="100%" stop-color="#2683B9"/></linearGradient></defs><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="12" fill="#D3D3D3" height="123.3154" id="User" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="111.4583" x="7.2917" y="7.2917"/><ellipse cx="39.6875" cy="24.9837" fill="#EDF0F2" rx="10.4167" ry="10.4167" style="stroke:#BABDBF;stroke-width:1.0416666666666667;"/><path d="M42.2266,29.6712 L36.5462,29.6712 L36.5462,20.5566 L42.2266,20.5566 L42.2266,22.1517 L38.3529,22.1517 L38.3529,24.1048 L41.8522,24.1048 L41.8522,25.6999 L38.3529,25.6999 L38.3529,28.0762 L42.2266,28.0762 L42.2266,29.6712 Z " fill="#000000"/><text fill="#FFFFFF" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="62.3958" y="29.3111">User</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="8.3333" x2="117.7083" y1="42.6758" y2="42.6758"/><text fill="#F8F9FA" font-family="DejaVu Sans" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="18.75" y="62.6867">name</text><text fill="#F8F9FA" font-family="DejaVu Sans" font-size="11.4583" lengthAdjust="spacing" textLength="32.2917" x="18.75" y="86.4415">email</text><text fill="#F8F9FA" font-family="DejaVu Sans" font-size="11.4583" lengthAdjust="spacing" textLength="88.5417" x="18.75" y="110.1964">passwordHash</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="8.3333" x2="117.7083" y1="122.2738" y2="122.2738"/><!--MD5=[7b57f7066b803747d2119f99dd1555d4]
+class Profile--><rect codeLine="17" fill="url(#g1xsjikx2ob02n0)" height="75.8057" id="Profile" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="82.2917" x="14.5833" y="218.75"/><rect fill="url(#g1xsjikx2ob02n1)" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:url(#g1xsjikx2ob02n1);stroke-width:1.0416666666666667;" width="82.2917" x="14.5833" y="218.75"/><rect fill="url(#g1xsjikx2ob02n1)" height="4.1667" style="stroke:url(#g1xsjikx2ob02n1);stroke-width:1.0416666666666667;" width="82.2917" x="14.5833" y="249.9674"/><rect codeLine="17" fill="none" height="75.8057" id="Profile" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="82.2917" x="14.5833" y="218.75"/><ellipse cx="29.1667" cy="236.4421" fill="#EDF0F2" rx="10.4167" ry="10.4167" style="stroke:#BABDBF;stroke-width:1.0416666666666667;"/><path d="M31.7057,241.1296 L26.0254,241.1296 L26.0254,232.015 L31.7057,232.015 L31.7057,233.61 L27.832,233.61 L27.832,235.5632 L31.3314,235.5632 L31.3314,237.1582 L27.832,237.1582 L27.832,239.5345 L31.7057,239.5345 L31.7057,241.1296 Z " fill="#000000"/><text fill="#FFFFFF" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="40.625" x="47.9167" y="240.7694">Profile</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="15.625" x2="95.8333" y1="254.1341" y2="254.1341"/><text fill="#F8F9FA" font-family="DejaVu Sans" font-size="11.4583" lengthAdjust="spacing" textLength="22.9167" x="26.0417" y="274.145">role</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="15.625" x2="95.8333" y1="286.2223" y2="286.2223"/><!--MD5=[dbfd7680984eb54d794e10dee7f3936a]
+class Instance--><rect codeLine="21" fill="url(#g1xsjikx2ob02n0)" height="75.8057" id="Instance" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="97.9167" x="215.1042" y="218.75"/><rect fill="url(#g1xsjikx2ob02n1)" height="35.3841" rx="4.1667" ry="4.1667" style="stroke:url(#g1xsjikx2ob02n1);stroke-width:1.0416666666666667;" width="97.9167" x="215.1042" y="218.75"/><rect fill="url(#g1xsjikx2ob02n1)" height="4.1667" style="stroke:url(#g1xsjikx2ob02n1);stroke-width:1.0416666666666667;" width="97.9167" x="215.1042" y="249.9674"/><rect codeLine="21" fill="none" height="75.8057" id="Instance" rx="4.1667" ry="4.1667" style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" width="97.9167" x="215.1042" y="218.75"/><ellipse cx="229.6875" cy="236.4421" fill="#EDF0F2" rx="10.4167" ry="10.4167" style="stroke:#BABDBF;stroke-width:1.0416666666666667;"/><path d="M232.2266,241.1296 L226.5462,241.1296 L226.5462,232.015 L232.2266,232.015 L232.2266,233.61 L228.3529,233.61 L228.3529,235.5632 L231.8522,235.5632 L231.8522,237.1582 L228.3529,237.1582 L228.3529,239.5345 L232.2266,239.5345 L232.2266,241.1296 Z " fill="#000000"/><text fill="#FFFFFF" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="56.25" x="248.4375" y="240.7694">Instance</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="216.1458" x2="311.9792" y1="254.1341" y2="254.1341"/><text fill="#F8F9FA" font-family="DejaVu Sans" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="226.5625" y="274.145">name</text><line style="stroke:#2FA4E7;stroke-width:1.0416666666666667;" x1="216.1458" x2="311.9792" y1="286.2223" y2="286.2223"/><!--MD5=[3b3a110f6aeec0a0bf442c01daca6c1c]
+link User to Profile--><path codeLine="23" d="M60.2917,139.3021 C59.3646,162.9479 58.3542,188.7708 57.5208,210.0729 " fill="none" id="User-Profile" style="stroke:#D3D3D3;stroke-width:2.0833333333333335;"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;" x1="57.5146" x2="63.4327" y1="210.2668" y2="218.8391"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;" x1="57.5146" x2="50.9423" y1="210.2668" y2="218.3484"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;" x1="57.5146" x2="57.1875" y1="210.2668" y2="218.5938"/><ellipse cx="57.76" cy="204.0217" rx="4.1667" ry="4.1667" style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;" x1="56.3081" x2="64.635" y1="134.6767" y2="135.0044"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;" x1="56.1852" x2="64.5121" y1="137.7993" y2="138.127"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;" x1="60.3077" x2="60.6354" y1="139.004" y2="130.6771"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="23.9583" x="66.1458" y="179.3111">has</text><!--MD5=[2f23d1a154b8a40019e3b76853269c8d]
+link Profile to Instance--><path codeLine="24" d="M105.5104,256.7708 C135.7813,256.7708 174.5729,256.7708 206.2083,256.7708 " fill="none" id="Profile-Instance" style="stroke:#36D39A;stroke-width:2.0833333333333335;"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="210.7604" x2="210.7604" y1="252.6042" y2="260.9375"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="207.6354" x2="207.6354" y1="252.6042" y2="260.9375"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="206.5938" x2="214.9271" y1="256.7708" y2="256.7708"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="105.2188" x2="96.8854" y1="256.7708" y2="265.1042"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="105.2188" x2="96.8854" y1="256.7708" y2="248.4375"/><line style="stroke:#36D39A;stroke-width:2.0833333333333335;" x1="105.2188" x2="96.8854" y1="256.7708" y2="256.7708"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="69.7917" x="121.0938" y="245.4569">belongs to</text><!--MD5=[cac094132b0d1c2752351e0a3a52f60e]
+link User to Instance--><path codeLine="26" d="M125.1042,127.2083 C154.875,154.75 189.9479,187.1875 217.4167,212.5833 " fill="none" id="User-Instance" style="stroke:#D3D3D3;stroke-width:2.0833333333333335;stroke-dasharray:7.0,7.0;"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;" x1="217.7532" x2="228.1136" y1="212.8868" y2="213.9686"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;" x1="217.7532" x2="219.6156" y1="212.8868" y2="223.1356"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;" x1="217.7532" x2="223.8646" y1="212.8868" y2="218.5521"/><ellipse cx="213.1697" cy="208.6378" rx="4.1667" ry="4.1667" style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;" x1="124.8688" x2="118.75" y1="127.001" y2="127.4625"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;" x1="124.8688" x2="118.75" y1="127.001" y2="115.225"/><line style="stroke:#D3D3D3;stroke-width:2.0833333333333335;fill:none;" x1="124.8688" x2="118.75" y1="127.001" y2="121.3438"/><text fill="#343A40" font-family="DejaVu Sans" font-size="12.5" lengthAdjust="spacing" textLength="59.375" x="193.2292" y="179.3111">operates</text><!--MD5=[376cd5f2ef3b2cdd6127cc9b28eded99]
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cerulean/puml-theme-cerulean.puml
+skinparam DefaultFontName DejaVu Sans
+skinparam class {
+    ArrowColor #36d39a
+    ArrowThickness 2
+}
+
+entity Instance {
+    name
+}
+together {
+    entity User #LightGray {
+        name
+        email
+        passwordHash
+    }
+    entity Profile {
+        role
+    }
+}
+entity Instance
+
+User ||-[#LightGray]down-o{ Profile: has
+Profile }-right-|| Instance: belongs to
+
+User }.[#LightGray].o{ Instance: operates
+
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName        "Verdana"
+skinparam defaultFontSize        12
+skinparam dpi                    100
+skinparam shadowing              false
+skinparam roundcorner            8
+skinparam ParticipantPadding     40
+skinparam BoxPadding             40
+skinparam Padding                5
+skinparam ArrowColor             #868E96
+skinparam stereotype {
+    CBackgroundColor #EDF0F2
+    CBorderColor #BABDBF
+    ABackgroundColor #8FB961
+    ABorderColor #5C862E
+    IBackgroundColor #D2494E
+    IBorderColor #9F161B
+    EBackgroundColor #E47833
+    EBorderColor #B14500
+    NBackgroundColor #35638F
+    NBorderColor #02305C
+}
+skinparam title {
+	FontColor	                 #2FA4E7
+	BorderColor	                 #BABDBF
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              #EDF0F2-#E9ECEF
+}
+
+
+skinparam legend {
+	BackgroundColor #E9ECEF
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+skinparam swimlane {
+	BorderColor #033C73
+	BorderThickness 2
+	TitleBackgroundColor  #EDF0F2-#E9ECEF
+	TitleFontColor #2FA4E7
+}
+
+
+skinparam activity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BarColor #73A839
+	StartColor #033C73
+	EndColor #033C73
+	DiamondBackgroundColor #FFF-#EDF0F2
+  	DiamondBorderColor #BABDBF
+	DiamondFontColor #343A40
+}
+
+
+skinparam participant {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam sequence {
+	BorderColor #2FA4E7
+	TitleFontColor #2FA4E7
+	BackgroundColor transparent
+	StartColor #2FA4E7
+	EndColor #2FA4E7
+	BoxBackgroundColor transparent
+	BoxBorderColor #868E96
+	BoxFontColor #343A40
+	DelayFontColor #343A40
+	LifeLineBorderColor #BABDBF
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #EDF0F2
+	GroupBorderColor #868E96
+	GroupFontColor #343A40
+	GroupHeaderFontColor #033C73
+	GroupBackgroundColor #E9ECEF
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor #FFF-#F8F9FA
+    DividerBorderColor #868E96
+    DividerBorderThickness 2
+    DividerFontColor #343A40
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #868E96
+	ReferenceFontColor #343A40
+	ReferenceHeaderFontColor #033C73
+	StereotypeFontColor #FFF
+}
+
+
+skinparam partition {
+	BorderColor #2FA4E7
+	FontColor #2FA4E7
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam control {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam entity {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam boundary {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam agent {
+	BackgroundColor #orange
+	BorderColor #999999
+	FontColor #333333
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam artifact {
+	BackgroundColor #FFF-#F8F9FA
+	BorderColor #BABDBF
+	FontColor #343A40
+}
+
+
+skinparam component {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam interface {
+	BackgroundColor  #D2494E
+	BorderColor  #C71C22
+	FontColor #343A40
+}
+
+
+skinparam storage {
+	BackgroundColor #E47833-#DD5600
+  	BorderColor #DD5600
+	FontColor #FFF
+}
+
+
+skinparam node {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #E9ECEF
+	FontColor #343A40
+}
+
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #F2FCFE
+	FontColor #2FA4E7
+}
+
+
+skinparam database {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	FontColor #343A40
+}
+
+
+skinparam class {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	HeaderBackgroundColor #2FA4E7-#2683B9
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #F8F9FA
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	StereotypeFontColor #343A40
+	BorderThickness 1
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam rectangle {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2FA4E7
+}
+
+
+skinparam package {
+	FontColor #2FA4E7
+	BorderColor #59B6EC
+	BackgroundColor transparent
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #DD5600
+	FontColor #DD5600
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #FFF-#EDF0F2
+  	BorderColor #033C73
+	FontColor #033C73
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+	BorderColor #2683B9
+	StartColor #033C73
+	EndColor #033C73
+	AttributeFontColor #343A40
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #FFF
+	BorderColor #2FA4E7
+	BackgroundColor #59B6EC-#2FA4E7
+}
+
+
+skinparam card {
+	BackgroundColor #35638F-#033C73
+	BorderColor #033C73
+	FontColor #FFF
+}
+
+
+skinparam file {
+	BackgroundColor #EDF0F2-#E9ECEF
+	BorderColor #033C73
+	FontColor #868E96
+
+}
+
+
+skinparam DefaultFontName DejaVu Sans
+skinparam class {
+    ArrowColor #36d39a
+    ArrowThickness 2
+}
+
+entity Instance {
+    name
+}
+together {
+    entity User #LightGray {
+        name
+        email
+        passwordHash
+    }
+    entity Profile {
+        role
+    }
+}
+entity Instance
+
+User ||-[#LightGray]down-o{ Profile: has
+Profile }-right-|| Instance: belongs to
+
+User }.[#LightGray].o{ Instance: operates
+
+@enduml
+
+PlantUML version 1.2021.14(Fri Nov 12 16:46:50 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
