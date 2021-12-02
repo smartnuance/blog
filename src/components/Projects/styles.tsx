@@ -38,7 +38,7 @@ export const Description = styled.p`${tw`text-sm pt-5`}`;
 export const Logo = styled.img`${tw`ml-2`}`;
 
 export const Date = styled.h3`
-  ${tw`text-xs text-indigo-500`};
+  ${tw`text-xs text-indigo-500 my-0`};
 `;
 
 export const Tags = styled.div`
