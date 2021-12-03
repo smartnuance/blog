@@ -6,9 +6,12 @@ import Header from 'components/Header';
 import SEO from 'components/SEO';
 import Button from 'components/ui/Button';
 import Container from 'components/ui/Container';
+
 import CTA from 'components/ui/CTA';
 import Quote from 'components/ui/Quote';
 import TitleSection from 'components/ui/TitleSection';
+import Alert from 'components/ui/Alert';
+import Gif from 'components/ui/Gif';
 import { AnimatePresence, motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
 import Link from 'gatsby-link';
@@ -16,7 +19,7 @@ import React from 'react';
 import * as Styled from './styles';
 
 // common components usable in mdx files without explicit imports
-const shortcodes = { blockquote: Quote, SEO, Container, TitleSection, Link, Button, CTA };
+const shortcodes = { blockquote: Quote, SEO, Container, TitleSection, Link, Button, CTA, Alert };
 
 interface Props {
   children: React.ReactNode;
