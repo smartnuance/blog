@@ -13,11 +13,11 @@ published: true
 
 Check out the <a href="https://admin-kit.smartnuance.com" target="_blank">demo</a> backed by an instance of the SaaS kit.
 
-View [code on GitHub](https://github.com/smartnuance/saas-kit).
+View [code on GitHub](https://github.com/smartnuance/saas-kit). It's open-source and free to use (MIT licensed).
 
 ## What is the go SaaS kit? {#what}
 
-This kit gives you a jump start for your next SaaS backend. It combines the benefits of a streamlined developer experience familiar from monolithic frameworks with the design advantages of microservices (checkout ["Soft factors of microservices"](/blog/microservices)).
+This open-source kit gives you a jump start for your next SaaS backend. It combines the benefits of a streamlined developer experience familiar from monolithic frameworks with the design advantages of microservices (checkout ["Soft factors of microservices"](/blog/microservices)).
 Coded 100% in Go, this kit provides a highly opinionated template how to write services along with a few ready-to-go services for fundamentals like authentication/authorization for the customers of your SaaS.
 
 Developing and testing microservices on the developer's machine used to be cumbersome.
@@ -97,7 +97,7 @@ First, we get rid of the dynamic permissions in the database all together. An in
 ![Hierarchical role-based authorization ERD](./auth-role-er.svg)
 
 - We included an _Instance_ table to support multi-tenancy, i.e. separating access control by the SaaS's tenants (we can provision multiple instances for the same customer/tenant).
-- We add a many-to-many relation from _User_ to _Instance_, over the intermediate table _Profile_. A user might have profiles for several instances with different roles.
+- We add a many-to-many relation from _User_ to _Instance_, over the intermediate table _Profile_. A user might have profiles for several instances with distinct roles.
 - Each profile has exactly one role attached.
 - **Roles inherit from at most one other role**.
 
