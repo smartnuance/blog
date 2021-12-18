@@ -76,6 +76,13 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
           </span>
         </Styled.Links>
       </Container>
+      <Container section>
+        Subscribe to my{' '}
+        <Link to="https://smartnuance.m-pages.com/blog" rel="next">
+          newsletter
+        </Link>{' '}
+        and learn about exiting code & their evolution!
+      </Container>
     </Layout>
   );
 };
