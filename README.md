@@ -1,10 +1,29 @@
-# Gatsby Markdown Typescript Personal Website
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://smartnuance.com">
+    <img src="src/assets/images/smartnuance.png" alt="Logo" width="80" height="80">
+  </a>
 
-This is a personal website / blog using [Gatsby](https://www.gatsbyjs.org/), [Markdown](https://www.markdownguide.org/), [Typescript](https://www.typescriptlang.org/), [Styled Components](https://styled-components.com/), [Talwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/) & [React Font Awesome](https://github.com/FortAwesome/react-fontawesome/).
+  <h3 align="center">Simon's website & blog</h3>
 
-## Base template
+  <p align="center">
+    See it live at
+    <br />
+    <a href="https://smartnuance.com"><strong>smartnuance.com</strong></a>
+    <br />
+    <br />
+    <a href="https://smartnuance.com/contact/">Get in contact</a>
+    ·
+    <a href="https://github.com/smartnuance/blog/issues">Report Typo</a>
+  </p>
+</div>
 
-[Gatsby Markdown Typescript Personal Website](https://gatsby-markdown-typescript-personal-website.netlify.app/)
+
+## Attribution
+
+This website/blog is based on
+[Gatsby Markdown Typescript Personal Website](https://gatsby-markdown-typescript-personal-website.netlify.app/) which uses [Gatsby](https://www.gatsbyjs.org/), [Markdown](https://www.markdownguide.org/), [Typescript](https://www.typescriptlang.org/), [Styled Components](https://styled-components.com/), [Talwind CSS](https://tailwindcss.com/), [Framer Motion](https://www.framer.com/motion/) & [React Font Awesome](https://github.com/FortAwesome/react-fontawesome/).
 
 ## Quick start
 
